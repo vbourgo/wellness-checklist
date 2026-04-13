@@ -319,75 +319,127 @@ const mist = "#E8E2D8";
 const stone = "#8A8070";
 const ink = "#1C1814";
 const cream = "#F8F4EE";
+const sage = "#5C7A5C";
+const [heroVisible, setHeroVisible] = useState(false);
+useEffect(() => { setTimeout(() => setHeroVisible(true), 100); }, []);
 return (
 <div style={{background:cream}}>
-<div style={{background:ink,padding:"64px 24px 56px",position:"relative",overflow:"hidden"}}>
-<div style={{position:"absolute",top:-80,right:-80,width:300,height:300,borderRadius:"50%",background:"radial-gradient(circle,rgba(200,68,10,0.18) 0%,transparent 70%)",pointerEvents:"none"}}/>
-<div style={{position:"absolute",bottom:-60,left:-60,width:220,height:220,borderRadius:"50%",background:"radial-gradient(circle,rgba(92,122,92,0.12) 0%,transparent 70%)",pointerEvents:"none"}}/>
-<div style={{maxWidth:620,margin:"0 auto",position:"relative"}}>
-<div style={{display:"inline-flex",alignItems:"center",gap:8,background:"rgba(200,68,10,0.15)",border:"1px solid rgba(200,68,10,0.3)",borderRadius:20,padding:"5px 14px",marginBottom:26}}>
-<div style={{width:6,height:6,borderRadius:"50%",background:ember}}/>
+{/* HERO */}
+<div style={{background:`linear-gradient(165deg, ${ink} 0%, #2A2420 50%, #1C1814 100%)`,padding:"80px 24px 72px",position:"relative",overflow:"hidden"}}>
+<div style={{position:"absolute",top:-120,right:-120,width:450,height:450,borderRadius:"50%",background:"radial-gradient(circle,rgba(200,68,10,0.14) 0%,transparent 60%)",pointerEvents:"none"}}/>
+<div style={{position:"absolute",bottom:-100,left:-100,width:350,height:350,borderRadius:"50%",background:"radial-gradient(circle,rgba(92,122,92,0.08) 0%,transparent 60%)",pointerEvents:"none"}}/>
+<div style={{position:"absolute",top:"50%",left:"50%",transform:"translate(-50%,-50%)",width:600,height:600,borderRadius:"50%",border:"1px solid rgba(200,68,10,0.06)",pointerEvents:"none"}}/>
+<div style={{maxWidth:620,margin:"0 auto",position:"relative",textAlign:"center",opacity:heroVisible?1:0,transform:heroVisible?"translateY(0)":"translateY(20px)",transition:"all 0.8s cubic-bezier(0.16,1,0.3,1)"}}>
+<div style={{display:"inline-flex",alignItems:"center",gap:8,background:"rgba(200,68,10,0.12)",border:"1px solid rgba(200,68,10,0.25)",borderRadius:24,padding:"6px 18px",marginBottom:32}}>
+<div style={{width:6,height:6,borderRadius:"50%",background:ember,boxShadow:"0 0 8px rgba(200,68,10,0.6)"}}/>
 <span style={{color:ember,fontSize:11,fontFamily:"monospace",letterSpacing:"0.12em",textTransform:"uppercase"}}>{t.hero.badge}</span>
 </div>
-<h1 style={{color:"white",fontSize:"clamp(30px,7vw,52px)",fontFamily:"Georgia,serif",fontWeight:"normal",lineHeight:1.12,margin:"0 0 14px",letterSpacing:"-0.5px"}}>
-{t.hero.h1a}<br/><span style={{color:ember}}>{t.hero.h1b}</span>
+<h1 style={{color:"white",fontSize:"clamp(34px,8vw,58px)",fontFamily:"Georgia,serif",fontWeight:"normal",lineHeight:1.08,margin:"0 0 20px",letterSpacing:"-1px"}}>
+{t.hero.h1a}<br/><span style={{color:ember,textShadow:"0 0 40px rgba(200,68,10,0.3)"}}>{t.hero.h1b}</span>
 </h1>
-<p style={{color:"#B0A898",fontSize:16,margin:"0 0 32px",lineHeight:1.65,maxWidth:480,fontStyle:"italic"}}>{t.hero.sub}</p>
-<div style={{display:"flex",gap:10,flexWrap:"wrap"}}>
-<button onClick={()=>setTab("program")} style={{background:ember,color:"white",border:"none",borderRadius:10,padding:"13px 24px",fontSize:14,cursor:"pointer",fontFamily:"Georgia,serif"}}>{t.hero.cta1}</button>
-<button onClick={()=>setTab("program")} style={{background:"transparent",color:"#B0A898",border:"1px solid rgba(255,255,255,0.15)",borderRadius:10,padding:"13px 22px",fontSize:13,cursor:"pointer"}}>{t.hero.cta2}</button>
+<p style={{color:"#A09888",fontSize:17,margin:"0 auto 40px",lineHeight:1.7,maxWidth:460,fontStyle:"italic"}}>{t.hero.sub}</p>
+<div style={{display:"flex",gap:12,flexWrap:"wrap",justifyContent:"center"}}>
+<button onClick={()=>setTab("program")} style={{background:ember,color:"white",border:"none",borderRadius:12,padding:"15px 32px",fontSize:15,cursor:"pointer",fontFamily:"Georgia,serif",boxShadow:"0 4px 24px rgba(200,68,10,0.35)",transition:"transform 0.2s, box-shadow 0.2s"}} onMouseEnter={e=>{e.target.style.transform="translateY(-2px)";e.target.style.boxShadow="0 6px 32px rgba(200,68,10,0.45)";}} onMouseLeave={e=>{e.target.style.transform="translateY(0)";e.target.style.boxShadow="0 4px 24px rgba(200,68,10,0.35)";}}>{t.hero.cta1}</button>
+<button onClick={()=>setTab("program")} style={{background:"rgba(255,255,255,0.05)",color:"#B0A898",border:"1px solid rgba(255,255,255,0.12)",borderRadius:12,padding:"15px 26px",fontSize:14,cursor:"pointer",backdropFilter:"blur(4px)",transition:"border-color 0.2s"}} onMouseEnter={e=>e.target.style.borderColor="rgba(255,255,255,0.3)"} onMouseLeave={e=>e.target.style.borderColor="rgba(255,255,255,0.12)"}>{t.hero.cta2}</button>
 </div>
 </div>
 </div>
+
+{/* STATS */}
 <div style={{background:sand,borderBottom:"1px solid "+mist}}>
-<div style={{maxWidth:620,margin:"0 auto",display:"flex",padding:"16px 20px",overflowX:"auto"}}>
+<div style={{maxWidth:620,margin:"0 auto",display:"grid",gridTemplateColumns:"repeat(4, 1fr)",padding:"24px 16px"}}>
 {t.stats.map((s,i)=>(
-<div key={i} style={{flex:"0 0 auto",minWidth:140,padding:"0 16px",borderRight:i<t.stats.length-1?"1px solid "+mist:"none"}}>
-<div style={{fontSize:18,fontFamily:"Georgia,serif",color:ember,marginBottom:2}}>{s.n}</div>
-<div style={{fontSize:10,color:stone,lineHeight:1.4}}>{s.label}</div>
+<div key={i} style={{textAlign:"center",padding:"8px 6px",borderRight:i<t.stats.length-1?"1px solid "+mist:"none"}}>
+<div style={{fontSize:26,fontFamily:"Georgia,serif",color:ember,marginBottom:4,fontWeight:"normal",letterSpacing:"-0.5px"}}>{s.n}</div>
+<div style={{fontSize:10,color:stone,lineHeight:1.4,maxWidth:130,margin:"0 auto"}}>{s.label}</div>
 </div>
 ))}
 </div>
 </div>
-<div style={{maxWidth:620,margin:"0 auto",padding:"44px 20px 0"}}>
-<div style={{fontSize:10,color:stone,fontFamily:"monospace",letterSpacing:"0.15em",textTransform:"uppercase",marginBottom:8}}>{t.howLabel}</div>
-<h2 style={{fontSize:22,fontFamily:"Georgia,serif",fontWeight:"normal",color:ink,margin:"0 0 28px",letterSpacing:"-0.3px",lineHeight:1.3}}>{t.howH}</h2>
-<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:10}}>
-{t.howCards.map((c,i)=>(
-<div key={i} style={{background:"white",border:"1px solid "+mist,borderRadius:14,padding:"16px 14px"}}>
-<div style={{fontSize:20,marginBottom:7}}>{c.emoji}</div>
-<div style={{fontSize:10,fontFamily:"monospace",color:ember,marginBottom:4,textTransform:"uppercase",letterSpacing:"0.08em"}}>{c.title} - {c.sub}</div>
-<div style={{fontSize:12,color:stone,lineHeight:1.55}}>{c.text}</div>
+
+{/* HOW IT WORKS */}
+<div style={{maxWidth:620,margin:"0 auto",padding:"56px 20px 0"}}>
+<div style={{textAlign:"center",marginBottom:36}}>
+<div style={{fontSize:10,color:stone,fontFamily:"monospace",letterSpacing:"0.15em",textTransform:"uppercase",marginBottom:10}}>{t.howLabel}</div>
+<h2 style={{fontSize:24,fontFamily:"Georgia,serif",fontWeight:"normal",color:ink,margin:0,letterSpacing:"-0.3px",lineHeight:1.3}}>{t.howH}</h2>
 </div>
-))}
+<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:12}}>
+{t.howCards.map((c,i)=>{
+const colors = [ember, "#C9960A", sage, "#4A4A8A"];
+return (
+<div key={i} style={{background:"white",border:"1px solid "+mist,borderRadius:16,padding:"20px 16px",position:"relative",overflow:"hidden",transition:"transform 0.2s, box-shadow 0.2s",cursor:"default"}} onMouseEnter={e=>{e.currentTarget.style.transform="translateY(-3px)";e.currentTarget.style.boxShadow="0 8px 30px rgba(0,0,0,0.08)";}} onMouseLeave={e=>{e.currentTarget.style.transform="translateY(0)";e.currentTarget.style.boxShadow="none";}}>
+<div style={{position:"absolute",top:0,left:0,right:0,height:3,background:`linear-gradient(90deg, ${colors[i]}, ${colors[i]}80)`}}/>
+<div style={{display:"flex",alignItems:"center",gap:10,marginBottom:12}}>
+<div style={{width:32,height:32,borderRadius:"50%",background:colors[i]+"12",display:"flex",alignItems:"center",justifyContent:"center",fontSize:14,flexShrink:0}}>{c.emoji}</div>
+<div style={{fontSize:12,fontFamily:"monospace",color:colors[i],fontWeight:"bold",textTransform:"uppercase",letterSpacing:"0.06em",lineHeight:1.2}}>{c.title}</div>
+</div>
+<div style={{fontSize:11,fontFamily:"monospace",color:colors[i],marginBottom:6,textTransform:"uppercase",letterSpacing:"0.08em",opacity:0.7}}>{c.sub}</div>
+<div style={{fontSize:12.5,color:"#666",lineHeight:1.6}}>{c.text}</div>
+</div>
+);})}
 </div>
 </div>
-<div style={{maxWidth:620,margin:"0 auto",padding:"36px 20px 0"}}>
-<div style={{fontSize:10,color:stone,fontFamily:"monospace",letterSpacing:"0.15em",textTransform:"uppercase",marginBottom:12,textAlign:"center"}}>{t.sciLabel}</div>
-<div style={{display:"flex",border:"1px solid "+mist,borderRadius:12,overflow:"hidden",background:"white"}}>
-{[{l:"GGIA",s:"UC Berkeley"},{l:"Harvard",s:"Adult Development"},{l:"Stanford",s:"Behaviour Design"},{l:"MIT/MGH",s:"Neuroscience"}].map((x,i)=>(
-<div key={i} style={{flex:1,padding:"12px 6px",textAlign:"center",borderRight:i<3?"1px solid "+mist:"none"}}>
+
+{/* SCIENTIFIC FOUNDATIONS */}
+<div style={{maxWidth:620,margin:"0 auto",padding:"48px 20px 0"}}>
+<div style={{fontSize:10,color:stone,fontFamily:"monospace",letterSpacing:"0.15em",textTransform:"uppercase",marginBottom:14,textAlign:"center"}}>{t.sciLabel}</div>
+<div style={{display:"grid",gridTemplateColumns:"repeat(4, 1fr)",gap:8}}>
+{[{l:"GGIA",s:"UC Berkeley",icon:"\uD83C\uDF93"},{l:"Harvard",s:"Adult Development",icon:"\uD83C\uDFDB\uFE0F"},{l:"Stanford",s:"Behaviour Design",icon:"\uD83D\uDD2C"},{l:"MIT/MGH",s:"Neuroscience",icon:"\uD83E\uDDE0"}].map((x,i)=>(
+<div key={i} style={{background:"white",border:"1px solid "+mist,borderRadius:12,padding:"16px 8px",textAlign:"center",transition:"transform 0.2s",cursor:"default"}} onMouseEnter={e=>e.currentTarget.style.transform="translateY(-2px)"} onMouseLeave={e=>e.currentTarget.style.transform="translateY(0)"}>
+<div style={{fontSize:18,marginBottom:6}}>{x.icon}</div>
 <div style={{fontSize:11,fontFamily:"Georgia,serif",color:ink,fontWeight:"bold",marginBottom:2}}>{x.l}</div>
 <div style={{fontSize:9,color:stone,lineHeight:1.3}}>{x.s}</div>
 </div>
 ))}
 </div>
 </div>
-<div style={{maxWidth:620,margin:"0 auto",padding:"36px 20px 0"}}>
-<div style={{fontSize:10,color:stone,fontFamily:"monospace",letterSpacing:"0.15em",textTransform:"uppercase",marginBottom:12}}>{t.testiLabel}</div>
-{t.testimonials.map((tt,i)=>(
-<div key={i} style={{background:"white",border:"1px solid "+mist,borderRadius:14,padding:"16px 18px",marginBottom:8}}>
-<div style={{color:ember,fontSize:11,marginBottom:7}}>{"★★★★★".slice(0,tt.stars)}</div>
-<p style={{fontSize:13,color:ink,lineHeight:1.7,margin:"0 0 9px",fontStyle:"italic"}}>"{tt.text}"</p>
-<div style={{fontSize:11,color:stone}}>{tt.name} - {tt.role}</div>
+
+{/* TESTIMONIALS */}
+<div style={{maxWidth:620,margin:"0 auto",padding:"48px 20px 0"}}>
+<div style={{textAlign:"center",marginBottom:20}}>
+<div style={{fontSize:10,color:stone,fontFamily:"monospace",letterSpacing:"0.15em",textTransform:"uppercase",marginBottom:8}}>{t.testiLabel}</div>
+</div>
+{t.testimonials.map((tt,i)=>{
+const avatarColors = [ember, sage, "#2A6B8A"];
+const initials = tt.name.split(" ").map(n=>n[0]).join("");
+return (
+<div key={i} style={{background:"white",border:"1px solid "+mist,borderRadius:16,padding:"22px 20px",marginBottom:10,position:"relative",transition:"transform 0.2s",cursor:"default"}} onMouseEnter={e=>e.currentTarget.style.transform="translateY(-2px)"} onMouseLeave={e=>e.currentTarget.style.transform="translateY(0)"}>
+<div style={{position:"absolute",top:16,right:18,fontSize:36,color:mist,fontFamily:"Georgia,serif",lineHeight:1}}>{"\u201C"}</div>
+<div style={{display:"flex",gap:8,marginBottom:10}}>
+{[1,2,3,4,5].map(s=>(
+<span key={s} style={{fontSize:13,color:s<=tt.stars?ember:"#DDD"}}>{"\u2605"}</span>
+))}
+</div>
+<p style={{fontSize:14,color:ink,lineHeight:1.75,margin:"0 0 16px",fontStyle:"italic",position:"relative",zIndex:1}}>{"\u201C"}{tt.text}{"\u201D"}</p>
+<div style={{display:"flex",alignItems:"center",gap:10}}>
+<div style={{width:36,height:36,borderRadius:"50%",background:avatarColors[i],display:"flex",alignItems:"center",justifyContent:"center",color:"white",fontSize:12,fontFamily:"monospace",fontWeight:"bold",letterSpacing:"0.05em"}}>{initials}</div>
+<div>
+<div style={{fontSize:12,fontWeight:"bold",color:ink}}>{tt.name}</div>
+<div style={{fontSize:11,color:stone}}>{tt.role}</div>
+</div>
+</div>
+</div>
+);})}
+</div>
+
+{/* FINAL CTA */}
+<div style={{maxWidth:620,margin:"0 auto",padding:"40px 20px 64px"}}>
+<div style={{background:`linear-gradient(145deg, ${ink}, #2A2420)`,borderRadius:20,padding:"44px 28px",textAlign:"center",position:"relative",overflow:"hidden",boxShadow:"0 12px 48px rgba(28,24,20,0.3)"}}>
+<div style={{position:"absolute",top:-60,right:-60,width:200,height:200,borderRadius:"50%",background:"radial-gradient(circle,rgba(200,68,10,0.15) 0%,transparent 60%)",pointerEvents:"none"}}/>
+<div style={{position:"absolute",bottom:-40,left:-40,width:160,height:160,borderRadius:"50%",background:"radial-gradient(circle,rgba(92,122,92,0.1) 0%,transparent 60%)",pointerEvents:"none"}}/>
+<div style={{position:"relative"}}>
+<div style={{fontSize:22,fontFamily:"Georgia,serif",color:"white",marginBottom:12,letterSpacing:"-0.3px",lineHeight:1.3}}>{t.ctaH}</div>
+<p style={{color:"#A09888",fontSize:13,margin:"0 auto 28px",fontStyle:"italic",lineHeight:1.6,maxWidth:400}}>{t.ctaSub}</p>
+<button onClick={()=>setTab("program")} style={{background:ember,color:"white",border:"none",borderRadius:12,padding:"16px 36px",fontSize:15,cursor:"pointer",fontFamily:"Georgia,serif",boxShadow:"0 4px 24px rgba(200,68,10,0.4)",transition:"transform 0.2s, box-shadow 0.2s"}} onMouseEnter={e=>{e.target.style.transform="translateY(-2px)";e.target.style.boxShadow="0 6px 32px rgba(200,68,10,0.5)";}} onMouseLeave={e=>{e.target.style.transform="translateY(0)";e.target.style.boxShadow="0 4px 24px rgba(200,68,10,0.4)";}}>{t.ctaBtn}</button>
+<div style={{marginTop:18,display:"flex",justifyContent:"center",gap:16,flexWrap:"wrap"}}>
+{[{icon:"\uD83D\uDD12",label:t.trustItems[0].title},{icon:"\uD83D\uDD2C",label:t.trustItems[2].title},{icon:"\u21A9\uFE0F",label:t.trustItems[1].title}].map((item,i)=>(
+<div key={i} style={{display:"flex",alignItems:"center",gap:5}}>
+<span style={{fontSize:11}}>{item.icon}</span>
+<span style={{fontSize:10,color:"#777",fontFamily:"monospace"}}>{item.label}</span>
 </div>
 ))}
 </div>
-<div style={{maxWidth:620,margin:"0 auto",padding:"32px 20px 56px"}}>
-<div style={{background:ink,borderRadius:16,padding:"30px 24px",textAlign:"center"}}>
-<div style={{fontSize:19,fontFamily:"Georgia,serif",color:"white",marginBottom:9,letterSpacing:"-0.3px",lineHeight:1.3}}>{t.ctaH}</div>
-<p style={{color:"#B0A898",fontSize:12,margin:"0 0 20px",fontStyle:"italic"}}>{t.ctaSub}</p>
-<button onClick={()=>setTab("program")} style={{background:ember,color:"white",border:"none",borderRadius:10,padding:"13px 28px",fontSize:14,cursor:"pointer",fontFamily:"Georgia,serif"}}>{t.ctaBtn}</button>
+</div>
 </div>
 </div>
 </div>
