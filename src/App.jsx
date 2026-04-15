@@ -11,20 +11,48 @@ const PROGRAM = [
    science:"Circadian rhythm synchronisation (Saper et al., Science 2005) is the master regulator of mood, energy and sleep quality.",
    habits:[
     {id:"w1h1",emoji:"🌅",title:"Morning light in first 30 min",micro:"Step outside for 10 min — no sunglasses",time:"10 min",
-     howTo:["Step outside within 30 min of waking","No sunglasses — outdoor light is 10–50x brighter than indoor","Cloudy? Stay 20–30 min instead of 10","Can't go outside? Sit by a bright open window facing the light"],
-     benefit:"Activates melanopsin receptors, resets the SCN clock and sets cortisol rhythm for the entire day.",
+     howTo:[
+       "Set a recurring phone reminder labelled 'light' 15 minutes after your alarm so you never forget the first 3 days.",
+       "Step outside within 30 minutes of waking — a balcony, garden, doorstep or the walk to the bakery all count.",
+       "Do not wear sunglasses: outdoor light is 10–50× brighter than indoor light and your eyes need the full spectrum.",
+       "Clear sky: 5–10 minutes is enough. Overcast: aim for 15–20 minutes. Heavy rain or before sunrise: use a 10,000 lux lightbox.",
+       "Cannot go outside? Sit within 1 metre of a wide-open window facing the brightest direction — do not rely on light through double glazing alone.",
+       "Pair it with an existing routine (coffee outside, walking the dog, a 5-minute stretch) so it becomes automatic within a week."
+     ],
+     benefit:"Morning light within 30 minutes of waking is the single most potent zeitgeber — the biological cue that synchronises your suprachiasmatic nucleus, the master clock in your hypothalamus. It triggers a sharp cortisol awakening response that raises daytime alertness and, 14–16 hours later, initiates the melatonin release that makes falling asleep effortless. Huberman Lab field data and Leproult & Van Cauter (Sleep, 2010) show that people who consistently get morning light fall asleep faster, experience fewer middle-of-the-night awakenings, and report measurably better mood and focus within 7–10 days — at zero cost and with no side effects.",
      source:"Huberman Lab / Leproult & Van Cauter, Sleep 2010",sourceUrl:"https://doi.org/10.1093/sleep/33.5.645"},
     {id:"w1h2",emoji:"🛏️",title:"Fixed wake-up time — 7 days/week",micro:"Same time weekends. Non-negotiable.",time:"0 effort",
-     howTo:["Set one alarm, same time every day including weekends","Do not hit snooze — place alarm across the room if needed","If tired: go to bed earlier tonight, never sleep in tomorrow","Stick for 14 days before judging the impact"],
-     benefit:"Sleep consistency is a stronger predictor of health than total sleep duration. Irregular schedules raise cardiovascular and metabolic risk.",
+     howTo:[
+       "Pick one wake time you can realistically hold every single day — including weekends, holidays and the day after a late night.",
+       "Set one alarm only — no snooze. Place the phone (or alarm clock) across the room so you have to stand up to turn it off.",
+       "Too tired? Go to bed 30 minutes earlier tonight rather than sleeping in tomorrow. Never 'catch up' on sleep by extending the morning.",
+       "After a bad night, accept the tiredness and stick to the wake time — your sleep drive will rebuild itself in 24–48 hours.",
+       "Weekends are where the habit is made or broken: a Saturday lie-in of 90 minutes creates a mini-jetlag that costs the whole week.",
+       "Commit for 14 full days before judging the effect — the first 3 mornings are the hardest, then it becomes self-sustaining."
+     ],
+     benefit:"Phillips et al. (Science Advances, 2017) tracked Harvard students and found that the regularity of sleep timing was a stronger predictor of academic performance and mood than total hours slept. Follow-up work in adults links irregular sleep schedules to higher cardiovascular risk, metabolic disease and depressive symptoms — independent of sleep duration. A fixed wake time anchors every downstream circadian process: hunger hormones, testosterone and cortisol cycles, body temperature and peak cognitive windows. It is the cheapest, most powerful sleep intervention that exists, and unlike sleeping more, it requires no extra time.",
      source:"Phillips et al., Science Advances 2017",sourceUrl:"https://doi.org/10.1126/sciadv.1601666"},
     {id:"w1h3",emoji:"📵",title:"Phone outside the bedroom",micro:"Buy a €5 alarm clock tonight",time:"5 min setup",
-     howTo:["Buy a basic alarm clock — any supermarket, under €5","Charge your phone in the hallway or kitchen permanently","Enable Do Not Disturb from 9pm — calls from favourites still get through","If anxious: you can still check it, just not in bed"],
-     benefit:"Eliminates pre-sleep blue light, kills the morning scroll reflex, and breaks phone dependency without willpower.",
+     howTo:[
+       "Order or buy a basic alarm clock tonight — any supermarket or pharmacy sells them for under €10. Do not postpone this step.",
+       "Choose a permanent charging spot outside the bedroom: hallway, kitchen counter or living room. Make it the one and only spot.",
+       "Enable Do Not Disturb from 21:00 to 07:00 — allow calls from 'favourites' so genuine emergencies still get through.",
+       "Tell your household and closest contacts for the first week so they know not to expect late-night replies.",
+       "If anxiety spikes in the first 3 nights (it usually does), leave the phone further from the bedroom door, not closer.",
+       "Replace the pre-sleep scroll with a book, a notebook or a short breathing practice — the void needs to be filled, not just emptied."
+     ],
+     benefit:"Kushlev & Dunn (Computers in Human Behavior, 2015) found that simply reducing phone checking produced measurable drops in stress and increased attentional focus within a single week. Sleeping with the phone in the bedroom correlates with shorter sleep, more night awakenings and a harder wake-up, because even the unconscious expectation of a notification keeps the nervous system in a lightly vigilant state. Removing it physically — not relying on willpower — eliminates the pre-sleep doom scroll, the middle-of-the-night check, and the morning cortisol hit from email and social media before you have even stood up. It is the single cheapest environmental change with compounding benefits.",
      source:"Kushlev & Dunn, Computers in Human Behavior 2015",sourceUrl:"https://doi.org/10.1016/j.chb.2014.09.044"},
     {id:"w1h4",emoji:"🔵",title:"Blue-light filter auto-on at 19:00",micro:"Night Shift scheduled — set once, done forever",time:"2 min setup",
-     howTo:["iPhone: Settings > Display & Brightness > Night Shift > Scheduled","Mac: System Settings > Displays > Night Shift > Scheduled","Android: Settings > Display > Night Mode > Automatic","Optional: orange-tinted glasses after 8pm for stronger protection"],
-     benefit:"Evening blue light delays melatonin onset by 90–180 min. Filtering it restores natural sleep pressure from night one.",
+     howTo:[
+       "iPhone: Settings → Display & Brightness → Night Shift → Scheduled → from 19:00 to 07:00, warmth slider at 'More warm'.",
+       "Mac: System Settings → Displays → Night Shift → Scheduled → custom from 19:00 to 07:00.",
+       "Android: Settings → Display → Night Light / Eye Comfort → Schedule → custom from sunset.",
+       "Windows: Settings → System → Display → Night Light → Schedule → turn on from 19:00.",
+       "For a stronger effect: install f.lux on desktop, or wear amber/orange blue-blocking glasses after 20:00.",
+       "Dim overhead lights in the evening — use lamps, candles or warm LED bulbs (2700K or below) rather than bright ceiling lights."
+     ],
+     benefit:"Chang et al. (PNAS, 2015) compared reading a backlit e-reader versus a printed book before bed and found that blue light suppressed melatonin release by over 50%, delayed sleep onset by an average of 10 minutes, reduced REM sleep, and — most importantly — made participants feel groggier the next morning despite sleeping the same number of hours. Blue wavelengths (around 460–480 nm) are the exact signal your brain uses to detect daylight, so evening exposure tells your master clock that it is still midday. Filtering them out removes that false signal and lets natural sleep pressure build normally, starting from the very first night.",
      source:"Chang et al., PNAS 2015",sourceUrl:"https://doi.org/10.1073/pnas.1418490112"},
   ]},
   {week:2,title:"The Body Awakens",theme:"Embodied Wellbeing",color:"#A06B10",light:"#FFF8ED",
@@ -32,20 +60,48 @@ const PROGRAM = [
    science:"Embodied cognition research (Niedenthal, Science 2007) shows body states directly shape emotional and cognitive experience.",
    habits:[
     {id:"w2h1",emoji:"💧",title:"500 ml water immediately on waking",micro:"Bottle ready on the nightstand the night before",time:"2 min/day",
-     howTo:["Fill a 500ml bottle each evening and place it on your nightstand","Drink it before coffee, tea or any food","Add a pinch of sea salt or lemon to boost electrolyte absorption","Room temperature water absorbs faster than cold"],
-     benefit:"Even mild dehydration (1–2%) degrades short-term memory, concentration and mood — measurable within 30 minutes of waking.",
+     howTo:[
+       "Fill a 500 ml glass or bottle every evening and place it on the nightstand — prepare it at the same time you brush your teeth.",
+       "Drink it all within the first 10 minutes of waking, before coffee, tea, food or your phone.",
+       "Add a pinch of sea salt, a squeeze of lemon, or a splash of electrolyte mix to improve absorption and replace overnight sodium loss.",
+       "Room-temperature water absorbs faster than cold; avoid ice water first thing in the morning.",
+       "Travelling? Use a bottle you already own — consistency matters more than the vessel.",
+       "Pair it with another morning action (stepping onto the cold floor, opening the curtains) to lock in the routine."
+     ],
+     benefit:"Ganio et al. (British Journal of Nutrition, 2011) showed that even mild dehydration of 1–2% — normal after a full night without fluid intake — impairs short-term memory, concentration, mood and increases perceived fatigue within 30 minutes. Your body loses 300–500 ml overnight through breathing and sweating, and morning cortisol further dehydrates cells. Rehydrating immediately restores plasma volume, supports cerebral blood flow, activates gut motility and provides a cheap but reliable energy lift. It is the single fastest mood and focus intervention of the entire program.",
      source:"Ganio et al., British Journal of Nutrition 2011",sourceUrl:"https://doi.org/10.1017/S0007114511002005"},
     {id:"w2h2",emoji:"🌬️",title:"4-7-8 breathing — 4 cycles",micro:"Inhale 4s · hold 7s · exhale 8s — before any screen",time:"2 min/day",
-     howTo:["Sit upright or lie flat with spine straight","Inhale through nose for 4 seconds","Hold breath completely for 7 seconds","Exhale slowly through mouth for 8 seconds","Repeat 4 full cycles — always before checking any screen"],
-     benefit:"Activates the parasympathetic nervous system within 60 seconds. Measurably lowers cortisol and heart rate. Effective against situational anxiety.",
+     howTo:[
+       "Sit or lie with a straight spine. Rest your tongue tip behind your upper front teeth throughout.",
+       "Exhale fully through your mouth with a soft whoosh sound.",
+       "Close the mouth, inhale quietly through the nose for a count of 4.",
+       "Hold the breath, completely still, for a count of 7.",
+       "Exhale audibly through the mouth for a count of 8 — twice as long as the inhale.",
+       "Repeat for 4 full cycles. Do it first thing in the morning and, ideally, before any moment of stress (meetings, commute, bedtime)."
+     ],
+     benefit:"Slow, extended-exhale breathing at around 6 breaths per minute — the heart-rate-variability resonant frequency — activates the vagus nerve and shifts the autonomic nervous system from sympathetic (fight-or-flight) to parasympathetic (rest-and-digest) dominance within 60 seconds. Brown & Gerbarg (J. Alternative & Complementary Medicine, 2005) and subsequent clinical trials show measurable drops in cortisol, heart rate, blood pressure and self-reported anxiety after a single session. Unlike meditation, no training is required: the physiology is hardwired and works from day one — it is the closest thing to a pharmaceutical-strength calming effect you can trigger yourself.",
      source:"Brown & Gerbarg, J. Alternative & Complementary Medicine 2005",sourceUrl:"https://doi.org/10.1089/acm.2005.11.189"},
     {id:"w2h3",emoji:"☕",title:"Delay your first coffee by 90 min",micro:"Cortisol peaks in hour 1 — caffeine then is wasted",time:"0 effort",
-     howTo:["Set a coffee-allowed reminder 90 min after your alarm","Use this window for water, light, and breathing instead","If you get a headache: this is caffeine dependency — resolves in 3–4 days","Decaf or herbal tea are fine in the first 90 minutes"],
-     benefit:"Adenosine competes with caffeine receptors. Waiting for the natural cortisol drop maximises the stimulant effect and reduces the afternoon energy crash.",
+     howTo:[
+       "Set a 'coffee allowed' reminder for exactly 90 minutes after your wake time.",
+       "Fill the first 90 minutes with water, daylight, breathing and light movement — this is the energy stack.",
+       "Decaf, herbal tea or hot water with lemon are fine during the waiting window.",
+       "Expect a mild headache or fog for the first 2–4 days if you have a strong coffee habit — this is adenosine recalibration, not deprivation.",
+       "Keep total daily caffeine under 400 mg and stop all caffeine at least 8 hours before your target bedtime.",
+       "Prefer filter coffee or light espresso on an emptyish stomach — pair with a small protein snack if you feel jittery."
+     ],
+     benefit:"Cortisol follows a natural surge in the first 45–60 minutes after waking — the 'cortisol awakening response' — which is what actually makes you alert. Drinking coffee during that window blunts the cortisol effect and builds caffeine tolerance far faster, so you need more coffee to feel the same lift. Lovallo et al. (Psychosomatic Medicine, 2006) showed that strategic caffeine timing produces stronger subjective alertness with lower total daily intake and less of the mid-afternoon energy crash. Delaying your first cup also extends the time between caffeine and your target bedtime, which protects deep sleep.",
      source:"Lovallo et al., Psychosomatic Medicine 2006",sourceUrl:"https://doi.org/10.1097/01.psy.0000204926.97596.2a"},
     {id:"w2h4",emoji:"🚶",title:"20-min walk — one daily anchor",micro:"Replace one commute segment permanently",time:"20 min/day",
-     howTo:["Pick one daily trip and modify it permanently — exit one stop earlier","No commute? Walk after breakfast or lunch","Leave your phone in your pocket: this is thinking time","Walk in green or outdoor environments whenever possible"],
-     benefit:"Non-intentional walking is more sustainable than exercise goals. Blue Zones research shows it is the single most common longevity habit.",
+     howTo:[
+       "Pick one existing trip and modify it permanently: get off the metro one stop earlier, park 10 minutes further, walk to lunch.",
+       "No commute? Walk immediately after breakfast or straight after lunch — post-meal walking also lowers glucose spikes.",
+       "Leave your phone in your pocket on silent — the walk is thinking time, not content time.",
+       "Choose the greenest or most open route available, even if it is slightly longer — nature amplifies the effect.",
+       "Walk at a comfortable conversational pace. This is not exercise — it is movement hygiene.",
+       "Rain or cold: wear the right jacket and go anyway. Missing the walk because of weather is how the habit dies."
+     ],
+     benefit:"Non-intentional, daily walking is the single most consistent longevity habit across all five Blue Zones (Buettner, National Geographic 2005 / 2023). It improves cardiovascular health, reduces all-cause mortality by 20–30% at just 7,000–8,000 steps per day, lowers blood glucose, improves creativity (Stanford, 2014) and is strongly protective against depression. Unlike structured exercise, walking requires no recovery, produces no injury risk, and compounds effortlessly over decades — which is why it outperforms almost every gym routine in observational longevity data.",
      source:"Buettner, Blue Zones — National Geographic 2005",sourceUrl:"https://www.bluezones.com"},
   ]},
   {week:3,title:"Gratitude Architecture",theme:"Positive Emotions",color:"#5C7A5C",light:"#EEF6EE",
@@ -53,20 +109,48 @@ const PROGRAM = [
    science:"GGIA Berkeley's gratitude practices are among the most replicated interventions in positive psychology, with effect sizes rivalling CBT for mild depression.",
    habits:[
     {id:"w3h1",emoji:"✍️",title:"3 specific gratitudes each evening",micro:"Physical notebook — go specific, not generic",time:"5 min/day",
-     howTo:["Use a physical notebook — not your phone (no screens before sleep)","Write 3 things specific to today — generic entries don't count","Describe WHY you're grateful: the barista remembered my order — I felt seen","Do this at the same time each evening, 10–30 min before sleep"],
-     benefit:"Increases subjective wellbeing by 25%, reduces depressive symptoms and improves sleep. Effects begin within 3 weeks and persist for months.",
+     howTo:[
+       "Each night, for at least one week, write down three things that went well for you today and briefly explain why they went well.",
+       "Use a physical notebook — not your phone — and keep it on your nightstand. A physical record matters far more than doing it in your head.",
+       "Entries can be small everyday events or bigger milestones: 'I got out of bed today', 'my colleague laughed at my joke', 'I got a promotion'.",
+       "Always add the 'why': 'the barista remembered my order — I felt seen because I rarely feel recognised in this new city'.",
+       "Do it at the same time each evening, ideally 10–30 minutes before sleep, as the final act of the day.",
+       "If you miss a day, do not backfill — just start again tomorrow. The habit is the streak, not the perfection."
+     ],
+     benefit:"The 'Three Good Things' exercise is one of the most replicated interventions in positive psychology. In Seligman's landmark 2005 study (and Emmons & McCullough, 2003), participants who did this for just one week reported higher happiness and lower depressive symptoms — and the effects were still measurable 6 months later. Writing engages episodic memory more deeply than thinking, trains your brain to scan for positive events during the day, and displaces the negativity bias that evolution built in. It takes 5 minutes and is free. Greater Good Science Center, UC Berkeley, lists it as one of its highest-impact research-backed practices.",
      source:"Emmons & McCullough, J. Personality & Social Psychology 2003",sourceUrl:"https://doi.org/10.1037/0022-3514.84.2.377"},
     {id:"w3h2",emoji:"💌",title:"Write one gratitude letter this week",micro:"To anyone, living or not. You don't have to send it.",time:"20 min once",
-     howTo:["Choose someone who impacted your life and was never properly thanked","Describe specifically what they did, how it affected you, and where you are because of it","You don't have to send it — but if you do, read it aloud in person for maximum effect","This works even for people who have passed away"],
-     benefit:"The gratitude letter is GGIA Berkeley's highest-impact single exercise. It produced the largest and most durable boost in happiness of all tested interventions.",
+     howTo:[
+       "Choose one person who had a meaningful impact on your life and was never properly thanked — a teacher, mentor, relative, friend.",
+       "Write a full letter (300+ words): describe specifically what they did, how it affected you, and where you are today because of it.",
+       "Use concrete details, not generalities — name the moment, the words, the feeling.",
+       "You do not have to send it. But if you can deliver it in person and read it aloud, the effect is measurably larger for both of you.",
+       "If the person has passed away, write it anyway — the benefit comes from the author, not the recipient.",
+       "Keep a copy. Re-read it the next time you feel flat or disconnected."
+     ],
+     benefit:"In Seligman et al. (American Psychologist, 2005), the gratitude letter produced the single largest and most durable increase in happiness of any positive psychology intervention tested — larger than meditation, mindfulness, signature strengths, or three good things. Participants who delivered the letter in person showed happiness gains that were still measurable one month later. The act of writing forces you to translate vague appreciation into specific causal memory, which activates reward circuitry and consolidates a more generous view of your own life story. GGIA Berkeley lists it as a top-tier practice — 20 minutes, one time, lasting effect.",
      source:"Seligman et al., American Psychologist 2005",sourceUrl:"https://doi.org/10.1037/0003-066X.60.5.410"},
     {id:"w3h3",emoji:"🌸",title:"Savour one moment daily — eyes open",micro:"Pause for 30 seconds. Notice texture, sound, temperature.",time:"30 sec/day",
-     howTo:["Pick a moment that already exists in your day: coffee, a meal, a walk","Stop. Put down your phone. Breathe.","Notice 3 sensory details: a sound, a texture, a temperature","Say internally: I am here, and this is good — do not rush past it"],
-     benefit:"Savouring interrupts hedonic adaptation and sustains positive emotion. Bryant & Veroff showed it independently boosts life satisfaction over 4 weeks.",
+     howTo:[
+       "Pick one moment that already exists in your day — the first sip of coffee, a meal, a walk, sunlight on your face.",
+       "When it happens, stop. Put down your phone. Take one slow breath.",
+       "Notice three sensory details: one sound, one texture, one temperature or smell.",
+       "Say internally: 'I am here, and this is good.' Hold the moment for 20–30 seconds — do not rush past it.",
+       "Return to the same moment every day to anchor the habit — novelty is not the point, attention is.",
+       "No apps, no timers, no photos: savouring through a screen is not savouring."
+     ],
+     benefit:"Savouring — the deliberate amplification and prolongation of positive experience — is one of the most effective and least practised happiness skills. Bryant & Veroff (2007) and subsequent studies show it independently boosts life satisfaction over a 4-week window and directly interrupts hedonic adaptation, the process by which the brain filters out recurring positive stimuli. Just 20–30 seconds of full attention converts an ordinary event into a stored positive memory, building a reservoir of emotional fuel to draw on during harder periods. It is the cheapest upgrade possible to experiences you are already having.",
      source:"Bryant & Veroff, Savoring: A New Model of Positive Experience 2007",sourceUrl:"https://greatergood.berkeley.edu/topic/savoring"},
     {id:"w3h4",emoji:"🍽️",title:"One screen-free, seated meal per day",micro:"Start with lunch. Phone in a drawer.",time:"Daily",
-     howTo:["Start with just one meal — lunch is easiest","Put your phone face-down in a drawer or bag before sitting","Eat slowly: chew each bite more than feels natural","Notice flavours, textures and your actual hunger and satiety signals"],
-     benefit:"Mindful eating reduces portion size by 20–30% without conscious effort and improves digestion via parasympathetic activation.",
+     howTo:[
+       "Start with the easiest meal — usually lunch, then one dinner, then breakfast.",
+       "Phone face-down in a drawer, bag or another room — not next to the plate.",
+       "Sit at a table. Eating standing up or at your desk does not count.",
+       "Chew each bite a little more than feels natural, and put the fork down between bites.",
+       "Notice 3 things about the food: temperature, texture and a single flavour note.",
+       "If you eat with others, use the time for real conversation — no TV in the background."
+     ],
+     benefit:"Mindful eating reliably reduces portion size by 20–30% without conscious effort, improves digestion via parasympathetic activation, and strengthens the natural hunger-satiety signals that distractions suppress (Allirot et al., British Journal of Nutrition, 2013). Eating while scrolling or watching a screen disconnects you from interoceptive feedback, which is why it is so easy to finish a bag of crisps in front of a series without noticing. A single daily screen-free meal is the smallest possible dose that still produces a measurable shift in how much you eat and how much pleasure you get from it.",
      source:"Allirot et al., British Journal of Nutrition 2013",sourceUrl:"https://doi.org/10.1017/S0007114512004540"},
   ]},
   {week:4,title:"Social Vitality",theme:"Relational Wealth",color:"#2A6B8A",light:"#EBF5FA",
@@ -74,20 +158,48 @@ const PROGRAM = [
    science:"The Harvard Study of Adult Development (80 years, 724 men) found relationship quality outperforms income, IQ, genes and social class as a predictor of wellbeing.",
    habits:[
     {id:"w4h1",emoji:"🤝",title:"One deep conversation daily",micro:"Call, not text. No agenda. Listen more than you talk.",time:"15 min/day",
-     howTo:["Call (voice or video), not text — tone of voice matters neurologically","Have no agenda: start with How are you really?","Listen without preparing your next sentence — ask follow-up questions","Aim for at least one person a day: family, friend or colleague"],
-     benefit:"The Harvard Good Life study identifies relationship quality as the single strongest predictor of health and happiness at age 80.",
+     howTo:[
+       "Choose voice or video over text — tone of voice carries 40% of emotional information that disappears in writing.",
+       "Start with a real question: 'How are you really?' or 'What is on your mind this week?'. Skip the weather.",
+       "Listen without preparing your next sentence. Ask one follow-up question before you share your own view.",
+       "Aim for at least one person a day — family, friend, colleague, neighbour. Rotate the list, do not always call the same person.",
+       "15 minutes is enough. Quality beats duration.",
+       "If the day is too busy: send a 30-second voice note with a real question. Better than a text, better than nothing."
+     ],
+     benefit:"The Harvard Study of Adult Development — the longest longitudinal study of human wellbeing ever conducted (80+ years, 724 men, now including partners and children) — concludes that relationship quality is the single strongest predictor of health and happiness at age 80, stronger than cholesterol, income, IQ or social class (Waldinger & Schulz, The Good Life, 2023). Even brief, regular meaningful contact activates oxytocin release, buffers cortisol and supports immune function. Deep conversations require no budget, no calendar and no travel — they just require that you pick up the phone and actually listen for 15 minutes.",
      source:"Waldinger & Schulz, The Good Life 2023",sourceUrl:"https://www.goodlifeproject.com"},
     {id:"w4h2",emoji:"🎁",title:"One act of kindness per day",micro:"Specific, spontaneous, directed at one person",time:"Daily",
-     howTo:["Make it specific and personal — a direct action for someone you can see","Examples: make a colleague's coffee, text I thought of you, hold the lift","Vary the recipient — do not always give to the same person","Notice how you feel afterwards — this is the dopamine loop to reinforce"],
-     benefit:"Performing acts of kindness increases life satisfaction, self-esteem and mood. Giving produces more happiness than spending on oneself.",
+     howTo:[
+       "Make it specific and personal — a direct action for a specific person you can see, not an abstract donation.",
+       "Examples: make a colleague's coffee, text someone 'I thought of you today', hold the lift, let the car behind you pass.",
+       "Vary the recipient over the week — do not always give to the same person.",
+       "Do it silently when possible — anonymous kindness activates reward circuits more cleanly than praised kindness.",
+       "Notice how you feel for the next 10 minutes — this is the dopamine-and-oxytocin signature you are training.",
+       "Once the daily habit is locked, pick one 'big' act per month: donation, volunteering, helping someone move."
+     ],
+     benefit:"Performing acts of kindness consistently increases life satisfaction, self-esteem, mood and even physical health markers across dozens of trials. Dunn, Aknin & Norton (Science, 2008) demonstrated that spending on others produces more happiness than spending the same amount on oneself — an effect replicated in countries with very different income levels. Kind acts release oxytocin, reduce social anxiety through repeated positive exposure, and strengthen the giver's perceived social connectedness. The daily dose matters more than the size: one small, specific act each day outperforms one large act per month.",
      source:"Dunn, Aknin & Norton, Science 2008",sourceUrl:"https://doi.org/10.1126/science.1150952"},
     {id:"w4h3",emoji:"📞",title:"Replace one scroll session with a real call",micro:"Someone you have been meaning to catch up with",time:"Daily",
-     howTo:["Identify your usual scroll time (commute, lunch, before bed)","Replace it once a day with a phone call","I was just thinking of you is a perfect opening","Even 5 minutes counts: brief unexpected calls produce significant wellbeing gains"],
-     benefit:"People systematically underestimate how much others enjoy unexpected calls. Epley & Schroeder found it produces far more wellbeing than either party predicts.",
+     howTo:[
+       "Identify your go-to scroll moment: commute, lunch break, before bed, waiting at the doctor's.",
+       "Pick one of those slots and replace it once a day with a phone call — not a text, not a Like.",
+       "Keep a rolling list of 5 people you owe a call: rotate through them.",
+       "Opening line: 'I was just thinking of you — do you have 5 minutes?' works 95% of the time.",
+       "5 minutes counts. Even brief, unexpected calls produce significant wellbeing gains for both people.",
+       "If they do not answer, leave a warm voicemail — the habit is the act of reaching out, not the pickup."
+     ],
+     benefit:"Epley & Schroeder (Journal of Experimental Psychology: General, 2014) ran a series of field experiments showing that people systematically underestimate how much both themselves and the other person will enjoy unexpected contact — a robust bias they call 'undersociality'. When participants were pushed past the hesitation and actually made the call, mood, connection and even sense of life meaning increased far more than they had predicted. Trading 10 minutes of scrolling for 10 minutes of voice contact replaces a dopamine-depleting activity with an oxytocin-producing one — a near-perfect trade for your nervous system.",
      source:"Epley & Schroeder, J. Experimental Psychology 2014",sourceUrl:"https://doi.org/10.1037/xge0000030"},
     {id:"w4h4",emoji:"🫂",title:"Express appreciation to one person today",micro:"Specific, sincere, out loud or in writing",time:"2 min/day",
-     howTo:["Say or write specifically what you appreciate and why","Not thanks for everything — but I appreciated how you handled X, it made me feel Y","Do it in person when possible — eye contact amplifies the effect for both","This works even for strangers"],
-     benefit:"Expressing appreciation strengthens relational bonds and activates the giver's reward system as strongly as the receiver's.",
+     howTo:[
+       "Pick one person in your day. Say — or write — exactly what you appreciate and why.",
+       "Specific, not generic: 'I appreciated how you handled that meeting — your calm made it possible for me to stay focused.'",
+       "Eye contact amplifies the effect for both sides. Do it in person when you can.",
+       "For written messages, use a real sentence, not an emoji — the specificity is what makes it land.",
+       "Works with strangers too: 'You made that really pleasant, thank you' to a cashier or a driver costs nothing and lands hard.",
+       "Once a week, do it for someone you see too often to normally thank — partner, parent, close friend."
+     ],
+     benefit:"Expressing appreciation strengthens relational bonds, increases closeness and activates the giver's reward system as strongly as the receiver's (GGIA Berkeley; Algoe, 2012). Unlike generic thanks, specific appreciation forces the brain to reconstruct exactly why the action mattered, which encodes the positive association more deeply for both people. Couples who regularly express specific appreciation report higher relationship satisfaction and lower break-up rates. At the individual level, it is an almost-free intervention that trains you to actively scan for what is good in your social world instead of defaulting to criticism.",
      source:"GGIA Berkeley — Expressing Gratitude practice",sourceUrl:"https://ggia.berkeley.edu/practice/gratitude_letter"},
   ]},
   {week:5,title:"Mindful Attention",theme:"Awareness & Wonder",color:"#6B4A9A",light:"#F3F0FA",
@@ -95,20 +207,48 @@ const PROGRAM = [
    science:"MBSR is one of the most studied psychological interventions, with structural brain changes measurable after just 8 weeks.",
    habits:[
     {id:"w5h1",emoji:"🧘",title:"10-minute meditation — every morning",micro:"Headspace · Petit Bambou · or just follow your breath",time:"10 min/day",
-     howTo:["Do it before checking email or social media","Use a guided app for the first 2 weeks: Headspace, Petit Bambou or Waking Up","Sit comfortably, close your eyes, focus on the sensation of breathing","When your mind wanders (it will), simply notice and return — that is the exercise"],
-     benefit:"After 8 weeks, MRI scans show increased grey matter in the prefrontal cortex and reduced amygdala volume. Meta-analyses show 38% anxiety reduction.",
+     howTo:[
+       "Do it before checking email, social media or the news — ideally straight after your morning light.",
+       "Use a guided app for the first 2 weeks: Headspace, Petit Bambou, Waking Up or Calm are all well-designed.",
+       "Sit upright on a chair or cushion with a straight spine. Lying down tends to send beginners to sleep.",
+       "Close your eyes. Focus on the simple sensation of breathing — not on controlling the breath.",
+       "When your mind wanders (it will, constantly), gently notice and return — that 'noticing and returning' is the entire exercise.",
+       "Miss a day? Just sit the next morning. Do not give up on week 1 because of one missed session."
+     ],
+     benefit:"Hölzel et al. (Psychiatry Research: Neuroimaging, 2011) showed that after just 8 weeks of daily meditation, MRI scans revealed increased grey matter density in the prefrontal cortex, hippocampus and insula, along with reduced amygdala reactivity to stress. Meta-analyses of MBSR trials report average anxiety reductions of around 38% and significant improvements in attention, emotional regulation and sleep. Ten minutes a day — less than a coffee break — is the dose that consistently produces measurable effects. Unlike most interventions, the benefits continue to compound for years of practice, making it the highest-leverage mental skill you can build in this program.",
      source:"Holzel et al., Psychiatry Research: Neuroimaging 2011",sourceUrl:"https://doi.org/10.1016/j.pscychresns.2010.08.006"},
     {id:"w5h2",emoji:"😮",title:"Awe walk — once per week",micro:"Walk slowly. Look up. Notice scale and beauty.",time:"20 min/week",
-     howTo:["Walk alone — awe is harder in conversation","Look for things that feel vast, beautiful or complex: sky, architecture, trees, water","Walk slowly — let yourself stop and look","UC Berkeley protocol: take a brief photo of one thing that moved you"],
-     benefit:"UC Berkeley's awe walk study: 15-min weekly awe walks over 8 weeks significantly increased positive emotions and reduced daily stressors.",
+     howTo:[
+       "Block 20 minutes in your calendar once per week — Sunday morning is an easy slot.",
+       "Walk alone — awe is harder to experience in conversation.",
+       "Seek vastness: look up at trees, sky, tall buildings, waves, mountains, stars, old architecture.",
+       "Walk slowly. Let yourself stop. The point is noticing, not covering distance.",
+       "UC Berkeley protocol: take one quick photo of something that moved you — it helps you remember and anchor the state.",
+       "Afterwards, note in one sentence what surprised you. Over weeks, patterns will emerge."
+     ],
+     benefit:"Sturm et al. (Emotion, 2022), from Dacher Keltner's lab at UC Berkeley, ran the landmark 'awe walk' study: older adults who took one 15-minute awe-focused walk per week for 8 weeks reported significantly more positive emotions and smaller selves in photos (a measurable marker of reduced self-preoccupation), compared to controls who took regular walks. Awe — the feeling of encountering something vast that expands your mental frame — reduces inflammatory markers, shifts attention outward from rumination, and reliably lifts mood. It takes 20 minutes a week and costs nothing.",
      source:"Sturm et al., Emotion 2022 — Keltner Lab, UC Berkeley",sourceUrl:"https://doi.org/10.1037/emo0000876"},
     {id:"w5h3",emoji:"🔕",title:"One hour digital-free per day",micro:"Same hour every day — consistency matters more than duration",time:"60 min/day",
-     howTo:["Choose the same hour every day — morning or evening, not random","Put your phone in a drawer or another room","Fill the time with a physical activity, reading, cooking, or simply sitting","Start with 30 minutes if 60 feels impossible — and build up"],
-     benefit:"Planned digital detox periods measurably reduce anxiety and restore attentional capacity. The predictable boundary matters more than total duration.",
+     howTo:[
+       "Choose the same hour every day — morning before work, or evening after dinner. Not random slots.",
+       "Physical removal beats willpower: put the phone in a drawer or another room, turn off laptop notifications.",
+       "Fill the hour deliberately — reading, cooking, walking, a hobby, a conversation, a bath — rather than hoping the boredom resolves itself.",
+       "Start with 30 minutes if 60 feels impossible, and add 10 minutes a week until you reach an hour.",
+       "Tell one person in your household so they know not to expect a reply during that window.",
+       "Do not celebrate the hour with an extra hour of scrolling afterwards — that defeats the point."
+     ],
+     benefit:"Kushlev & Dunn's research on smartphone use (2015, and follow-ups) and Cal Newport's 'Digital Minimalism' synthesis (2019) both conclude that a predictable, protected window free from digital input is more effective for reducing anxiety and restoring attention than trying to reduce total daily screen time. The brain's default-mode network — the network associated with reflection, creativity and memory consolidation — only activates when input stops. A daily, recurring digital hour gives that network reliable room to operate and has been linked to reduced rumination, better sleep quality and increased perceived meaning in life.",
      source:"Newport, Deep Work 2016 / Kushlev & Dunn 2015",sourceUrl:"https://doi.org/10.1016/j.chb.2014.09.044"},
     {id:"w5h4",emoji:"🌿",title:"Spend 20 min in nature today",micro:"Park, garden, waterside — not a screen wallpaper",time:"20 min/day",
-     howTo:["Find the nearest green space — a park, garden, riverside or forest path","Leave headphones behind at least once per week","Sit or walk slowly — the dose-response plateaus at 120 min/week total","No nature nearby? Trees and plants on a street still count"],
-     benefit:"Nature exposure for 20+ min measurably lowers cortisol. The dose-response curve plateaus at 120 min/week — a surprisingly achievable target.",
+     howTo:[
+       "Find the nearest green or blue space — park, garden, riverside, canal, forest path, coastline.",
+       "Aim for at least 120 minutes per week total — split however works (20 min daily, or 2 × 60 min).",
+       "Walk or sit — both work. The dose is exposure, not effort.",
+       "Leave headphones out at least once a week — natural sounds have an independent calming effect.",
+       "No big park nearby? Tree-lined streets, a community garden, or even a plant-filled balcony still count.",
+       "In bad weather, a 10-minute stand under a tree in the rain is worth more than scrolling indoors."
+     ],
+     benefit:"White et al. (Scientific Reports, 2019) analysed nearly 20,000 people and found that spending at least 120 minutes per week in natural environments was the threshold at which people reported significantly better health and wellbeing — with the effect plateauing around 200–300 minutes. Hunter et al. (Frontiers in Psychology, 2019) measured salivary cortisol and found that 20–30 minutes of nature contact produced the greatest per-minute stress-reduction effect. Nature exposure lowers cortisol, blood pressure and rumination while increasing positive affect and attentional restoration — an unusually large payoff for something that is free and requires no skill.",
      source:"Hunter et al., Frontiers in Psychology 2019",sourceUrl:"https://doi.org/10.3389/fpsyg.2019.00722"},
   ]},
   {week:6,title:"Movement & Resilience",theme:"Physical Foundation",color:"#8A4A2A",light:"#FBF0EB",
@@ -116,20 +256,48 @@ const PROGRAM = [
    science:"Exercise is now a first-line treatment for mild-to-moderate depression in UK NICE guidelines (2022), with effect sizes matching antidepressants.",
    habits:[
     {id:"w6h1",emoji:"🏃",title:"Aerobic exercise 3x this week",micro:"20–30 min at conversational intensity",time:"3x20 min",
-     howTo:["Choose any aerobic activity: brisk walking, cycling, swimming, jogging or dancing","Target intensity: you can speak a sentence but not comfortably sing","Schedule all 3 sessions in your calendar now as fixed appointments","Missing one session does not break the streak — just do the next one"],
-     benefit:"Reduces bad mental health days by 43% (Lancet, 1.2M people). Raises BDNF (brain fertiliser), reduces inflammation. Rivals antidepressants for mild depression.",
+     howTo:[
+       "Pick any aerobic activity you already tolerate: brisk walking, cycling, jogging, swimming, dancing, hiking.",
+       "Target intensity: you can speak a sentence but not comfortably sing. This is around 60–75% of max heart rate.",
+       "Schedule all 3 sessions in your calendar now, as fixed appointments with yourself.",
+       "Shorter is better than skipped: 15 minutes counts on a bad day.",
+       "Pair the sessions with something you already enjoy — a favourite playlist, a podcast, a walking friend.",
+       "Missed a session? Just do the next one. Never double up to compensate."
+     ],
+     benefit:"Chekroud et al. (The Lancet Psychiatry, 2018) analysed self-reported mental health in 1.2 million Americans and found that people who exercised regularly experienced 43% fewer 'bad mental health days' per month than those who did not — a larger effect than any other modifiable factor studied, including income and education. The mechanism: exercise increases BDNF (brain-derived neurotrophic factor, essentially fertiliser for neurons), reduces systemic inflammation, and acutely lifts mood through endocannabinoid and dopamine release. UK NICE guidelines now list aerobic exercise as a first-line treatment for mild-to-moderate depression, with effect sizes that match SSRI antidepressants and far fewer side effects.",
      source:"Chekroud et al., The Lancet Psychiatry 2018",sourceUrl:"https://doi.org/10.1016/S2215-0366(18)30227-X"},
     {id:"w6h2",emoji:"🌡️",title:"End shower with 30 sec cold water",micro:"Warm first, cold last. Breathe through it.",time:"Daily",
-     howTo:["Finish your normal warm shower as usual","Turn the temperature to cold for 30 seconds at the end","Breathe slowly and steadily — the urge to gasp passes in 10 seconds","Increase by 15 seconds per week until you reach 2–3 minutes"],
-     benefit:"Cold exposure raises noradrenaline by 200–300% and dopamine by 250%, effects lasting 3–4 hours. Reduces chronic fatigue and produces measurable anti-inflammatory action.",
+     howTo:[
+       "Finish your normal warm shower as usual — this is an add-on, not a replacement.",
+       "Turn the temperature to fully cold for 30 seconds at the end, starting from the feet and moving up.",
+       "Breathe slowly and deeply through the nose — the urge to gasp passes within 10–15 seconds.",
+       "Add 15 seconds each week until you reach 2–3 minutes total.",
+       "Do it in the morning, not before bed — the noradrenaline spike lasts several hours.",
+       "Skip it if you have uncontrolled high blood pressure or a cardiac condition — always check with your doctor first."
+     ],
+     benefit:"Šrámek et al. and Shevchuk (Medical Hypotheses, 2008) document that short cold exposure raises noradrenaline by 200–300% and dopamine by around 250% — effects lasting 2–4 hours. This produces sustained alertness without the crash of caffeine, reduces inflammatory markers, and has been repeatedly linked to reduced chronic fatigue and improved mood in healthy adults. Beyond the chemistry, the daily act of voluntarily doing something unpleasant trains a small dose of psychological resilience — you teach yourself that discomfort is tolerable and time-limited, which transfers to other stressful moments in your day.",
      source:"Shevchuk, Medical Hypotheses 2008",sourceUrl:"https://doi.org/10.1016/j.mehy.2007.04.052"},
     {id:"w6h3",emoji:"📦",title:"Declutter one space you use daily",micro:"Desk, nightstand, or kitchen counter — pick one only",time:"30 min once",
-     howTo:["Choose just one surface — not a whole room","Apply the 3-box rule: keep, donate, bin","Once clear, establish a 1 in, 1 out rule for that surface","Take a before/after photo to appreciate the change"],
-     benefit:"Visual clutter creates persistent background cognitive load. Princeton demonstrated measurable attention and cortisol effects from disordered environments.",
+     howTo:[
+       "Pick one surface only — desk, nightstand, kitchen counter, bathroom shelf. Not a whole room.",
+       "Empty it completely, then apply a 3-box rule: keep, donate, bin.",
+       "Only put back what you genuinely use in a normal week. Be honest.",
+       "Establish a '1 in, 1 out' rule for that surface going forward.",
+       "Take a before/after photo — visible progress is a strong motivator to do the next surface.",
+       "Repeat on one new surface per week until the key spaces in your home are calm."
+     ],
+     benefit:"McMains & Kastner (Journal of Neuroscience, 2011), using fMRI at Princeton, demonstrated that visual clutter in your environment competes for neural resources and measurably reduces the brain's ability to focus on any single task. Follow-up work links disorganised environments to higher cortisol levels, particularly in women. Decluttering a single frequently-used space reduces background cognitive load every time you look at it, lowers daily decision fatigue and produces a small but reliable mood lift for weeks — one of the highest-leverage 30-minute investments you can make.",
      source:"McMains & Kastner, J. Neuroscience 2011",sourceUrl:"https://doi.org/10.1523/JNEUROSCI.6138-10.2011"},
     {id:"w6h4",emoji:"🥦",title:"Redesign your food environment",micro:"Healthy food at eye level. Snacks hidden at the back.",time:"20 min once",
-     howTo:["Move healthy foods to the front and centre of your fridge at eye level","Put fruit in a bowl on the counter — visible food gets eaten","Move snacks and sweets to high shelves or opaque containers at the back","Cut and prep vegetables in advance so they are as convenient as a bag of crisps"],
-     benefit:"Environmental cues drive 70% of eating decisions, independent of hunger or willpower. Small friction changes produce consistent, lasting dietary improvements.",
+     howTo:[
+       "Move fruit, vegetables and protein to the front and centre of your fridge at eye level.",
+       "Put a bowl of fruit on the counter — visible food gets eaten.",
+       "Move sweets, crisps and alcohol to high shelves or opaque containers at the back.",
+       "Wash, cut and portion vegetables on shopping day so they are as convenient as a packet of crisps.",
+       "Keep ready-to-go protein (eggs, yoghurt, tofu, chicken) in clear containers at eye level.",
+       "Do not buy what you do not want to eat — you cannot resist what is already in the cupboard at 22:00."
+     ],
+     benefit:"Brian Wansink's work at the Cornell Food & Brand Lab, and subsequent replication studies, estimate that around 70% of daily eating decisions are driven by environmental cues — visibility, convenience, portion size, plate colour — rather than conscious hunger or willpower. Small friction changes (moving crisps to a high cupboard, putting fruit in plain view) produce consistent, lasting dietary improvements without any attempt at dieting. Because the change happens once, then runs on autopilot, it is one of the few food interventions whose effect does not fade over time.",
      source:"Wansink, Mindless Eating — Cornell Food & Brand Lab",sourceUrl:"https://doi.org/10.1093/jn/nxac141"},
   ]},
   {week:7,title:"Compassion & Meaning",theme:"Inner Compass",color:"#2A7A6A",light:"#EBF6F4",
@@ -137,20 +305,48 @@ const PROGRAM = [
    science:"Kristin Neff's self-compassion research shows it is a stronger predictor of emotional resilience than self-esteem, without its fragility.",
    habits:[
     {id:"w7h1",emoji:"💙",title:"Self-compassion practice — 5 min/day",micro:"What would I say to a friend in this situation? Say it to yourself.",time:"5 min/day",
-     howTo:["When you notice self-criticism, pause and ask: What would I say to a close friend who told me this?","Say that to yourself — out loud if possible","Place one hand on your chest: the physical gesture activates the caregiving system","Or write it: 3 sentences of compassionate self-talk in your journal"],
-     benefit:"Self-compassion reduces anxiety, depression and perfectionism while increasing motivation. Unlike self-esteem, it does not require success and produces no narcissistic side-effects.",
+     howTo:[
+       "When you notice self-criticism, pause and ask: 'What would I say to a close friend in exactly this situation?'.",
+       "Say that sentence to yourself — out loud if possible, or silently with conviction.",
+       "Place one hand on your chest or cheek. The physical gesture activates the mammalian caregiving system.",
+       "Name the feeling out loud: 'this is stress', 'this is disappointment'. Labelling reduces its intensity (Lieberman, UCLA).",
+       "Remind yourself that this is part of being human — 'other people feel this too' — not a personal failure.",
+       "Optional written version: 3 sentences of compassionate self-talk in your journal each evening."
+     ],
+     benefit:"Kristin Neff's two decades of research (Neff & Germer, J. Clinical Psychology, 2013; and many replications) show that self-compassion reduces anxiety, depression, perfectionism and rumination while simultaneously increasing motivation, learning from mistakes and resilience after failure. Unlike self-esteem, which requires a steady supply of success and can produce narcissistic side effects, self-compassion is available even during failure — which is precisely when you need it most. Meta-analyses show effect sizes comparable to established CBT interventions, with no downsides and no cost.",
      source:"Neff & Germer, J. Clinical Psychology 2013",sourceUrl:"https://doi.org/10.1002/jclp.21923"},
     {id:"w7h2",emoji:"🌟",title:"Identify one source of meaning today",micro:"Not a goal. A moment, a person, a why.",time:"2 min/day",
-     howTo:["Ask yourself each morning: What will make today feel worth it?","It does not have to be big — a conversation, a task done well, a moment of beauty","Write it in your journal or phone notes","In the evening, note whether it happened and how it felt"],
-     benefit:"Sense of meaning (eudaimonia) is a stronger predictor of longevity and immune function than hedonic pleasure. Meaning buffers stress and predicts resilience.",
+     howTo:[
+       "Each morning, ask yourself: 'What would make today feel worth it?'.",
+       "Keep it small and concrete — a good conversation, a task done well, helping someone, a moment of beauty.",
+       "Write it in your journal or a phone note (3–8 words is plenty).",
+       "In the evening, check whether it happened and how it felt. Note anything surprising.",
+       "On harder days, the answer can simply be 'getting through it with kindness' — that still counts.",
+       "At the end of the week, re-read your 7 answers. Patterns reveal what your life is actually oriented around."
+     ],
+     benefit:"Fredrickson et al. (PNAS, 2013) showed that eudaimonic wellbeing — the kind that comes from meaning and purpose rather than pleasure alone — is associated with a distinct pattern of gene expression that includes lower inflammation and stronger antiviral response. Longitudinal studies also find that a sustained sense of purpose predicts longer lifespan, lower risk of Alzheimer's, and greater resilience to stress. A daily 2-minute practice of naming your 'why' does not replace long-term purpose work — but it keeps you connected to it at the scale of real life, where days blur without intention.",
      source:"Fredrickson et al., PNAS 2013",sourceUrl:"https://doi.org/10.1073/pnas.1305419110"},
     {id:"w7h3",emoji:"🎨",title:"One hour of flow activity per week",micro:"Something absorbing, non-digital, skill-matched",time:"60 min/week",
-     howTo:["Flow requires a task challenging but not overwhelming your skills","Examples: cooking a complex recipe, playing an instrument, drawing, building, gardening","No notifications during this hour — distractions immediately break flow","Start a timer: flow often takes 15–20 minutes to begin"],
-     benefit:"Csikszentmihalyi's flow state is associated with peak positive affect and intrinsic motivation. Regular flow experiences correlate with higher life satisfaction and lower depression.",
+     howTo:[
+       "Pick an activity that is challenging but just within your skills — too easy is boredom, too hard is frustration.",
+       "Good candidates: cooking a new recipe, playing an instrument, drawing, building, gardening, climbing, writing, sport.",
+       "Block 60 uninterrupted minutes in your calendar. No notifications. No multitasking.",
+       "Start a timer — flow typically takes 15–20 minutes to begin, so any distraction resets the clock.",
+       "If you resist starting, commit to 10 minutes only — the activation energy is where flow sessions die.",
+       "Over weeks, pay attention to which activities actually produce the absorbed state, and do more of those."
+     ],
+     benefit:"Mihaly Csikszentmihalyi's original flow research (1975–1990s) and subsequent decades of replication show that regular flow experiences are among the strongest correlates of life satisfaction, intrinsic motivation and long-term happiness — stronger than almost any material condition. In flow, self-monitoring and time perception fade, focus is effortless, and the brain consolidates skill faster than in forced practice. One protected hour per week is the minimum dose shown to produce a detectable effect on weekly mood, and it compounds over time as your skill grows.",
      source:"Csikszentmihalyi, Flow: The Psychology of Optimal Experience 1990",sourceUrl:"https://ggia.berkeley.edu/practice/find_your_flow_activities"},
     {id:"w7h4",emoji:"🌱",title:"Write your good life in 3 sentences",micro:"Not goals. What does a good day, year, life look and feel like?",time:"10 min once",
-     howTo:["Find 15 quiet minutes with a pen and paper","Write 3 sentences: A good day for me is..., A good year involves..., A good life means...","Focus on feelings and experiences, not achievements or possessions","Keep this somewhere visible — return to it when decisions feel hard"],
-     benefit:"Values clarification improves decision-making, reduces regret and activates the brain self-referential network in ways linked to sustained wellbeing.",
+     howTo:[
+       "Find 15 quiet minutes with a pen and paper — not a screen.",
+       "Sentence 1: 'A good day for me is…'. Focus on how it feels, not what you achieve.",
+       "Sentence 2: 'A good year involves…'. Think experiences, relationships and growth, not titles or purchases.",
+       "Sentence 3: 'A good life means…'. One line. Do not overthink — your gut knows.",
+       "Keep the paper somewhere visible: wallet, bedside table, desk, phone wallpaper.",
+       "Re-read it when you are about to make a hard decision — and honestly ask whether the choice brings you closer or further from it."
+     ],
+     benefit:"Values clarification exercises improve decision-making, reduce regret, buffer against stress, and are linked to activation patterns in the medial prefrontal cortex — the brain's self-referential network — associated with durable wellbeing (Lyubomirsky, The How of Happiness, 2008; and Cohen & Sherman's affirmation literature). When your 'why' is explicit and on paper, minor daily choices start to compound in the same direction, and you stop wasting energy on options that do not fit. 10 minutes, one time, with effects that can last years — one of the highest-leverage exercises of the program.",
      source:"Lyubomirsky, The How of Happiness 2008",sourceUrl:"https://sonjalyubomirsky.com/books/the-how-of-happiness/"},
   ]},
   {week:8,title:"Integration & Momentum",theme:"Your Permanent Stack",color:"#4A4A8A",light:"#EEEEF8",
@@ -158,20 +354,443 @@ const PROGRAM = [
    science:"Identity-based habit formation (Fogg, Stanford / Clear, Atomic Habits) shows framing habits as who I am vs what I do produces far superior long-term adherence.",
    habits:[
     {id:"w8h1",emoji:"🔁",title:"Review your 8-week habit stack",micro:"Which 5 had the biggest impact? Keep those as non-negotiables.",time:"20 min once",
-     howTo:["Look back through completed weeks and note which habits you actually felt clearly","Identify your top 5 by impact — these become your non-negotiables","For lower-impact habits: continue, modify, or drop","Write your final 5 non-negotiables on a card and put it somewhere visible"],
-     benefit:"Systematic reflection on habit outcomes increases adherence and enables pruning of low-ROI behaviours. Consolidation is as critical as acquisition.",
+     howTo:[
+       "Block 20 minutes alone with your notes and the program. No distractions.",
+       "Go week by week and rate each habit 1–5 on how clearly it improved your life.",
+       "Identify your top 5 by impact — these become your permanent non-negotiables.",
+       "For medium-impact habits: decide to continue, modify the dose, or drop them.",
+       "For low-impact habits: drop without guilt. Not every habit works for every person.",
+       "Write your final 5 non-negotiables on a single card and put it somewhere you see every day."
+     ],
+     benefit:"BJ Fogg's Tiny Habits research (Stanford Behaviour Design Lab, 2019) and James Clear's Atomic Habits synthesis both show that the consolidation phase — explicit reflection on what worked — is as critical as the acquisition phase for long-term adherence. Habits that are reviewed and named become part of identity; habits that are not fade within weeks. Reducing your habit stack to the 5 that produced the clearest subjective effect increases the probability of long-term maintenance by a factor of 2–3 in tracking studies, and eliminates the cognitive overhead of trying to maintain everything.",
      source:"Fogg, Tiny Habits — Stanford Behaviour Design Lab 2019",sourceUrl:"https://tinyhabits.com"},
     {id:"w8h2",emoji:"📅",title:"Schedule your social anchor for next month",micro:"One real gathering with people who matter. In the calendar now.",time:"5 min once",
-     howTo:["Open your calendar right now and block a date in the next 4 weeks","Invite at least one person whose company you genuinely value","Make it specific: a meal, a walk, a film — not we should get together sometime","Add a recurring monthly reminder — relationships need investment, not luck"],
-     benefit:"The Harvard Good Life study shows that people who actively invest in relationships report higher life satisfaction at every age.",
+     howTo:[
+       "Open your calendar right now. Pick a concrete date within the next 4 weeks.",
+       "Invite at least one person whose company you genuinely value — ideally 2–4 people.",
+       "Be specific: a meal, a walk, a film, a coffee — never 'we should get together sometime'.",
+       "Send the invitation in the same 5 minutes. Do not wait for the 'right moment'.",
+       "Add a recurring monthly reminder in your calendar titled 'social anchor'.",
+       "Once you have the rhythm, add a second recurring anchor with a different circle (family, old friends, colleagues)."
+     ],
+     benefit:"The Harvard Study of Adult Development (Waldinger & Schulz, The Good Life, 2023) consistently shows that people who proactively invest in relationships — rather than waiting for them to happen — report the highest life satisfaction at every age, regardless of introversion or extraversion. Scheduling relationships like you schedule meetings protects them from the tyranny of urgent tasks. A recurring monthly anchor transforms friendships from something that 'should happen more often' into something that actually does — which is the only version that counts for wellbeing.",
      source:"Waldinger & Schulz, The Good Life 2023",sourceUrl:"https://www.goodlifeproject.com"},
     {id:"w8h3",emoji:"🧾",title:"Write your wellbeing OS — one page",micro:"Your non-negotiables, your values, your three anchors",time:"30 min once",
-     howTo:["Section 1: My 5 non-negotiable daily habits (from your week 8 review)","Section 2: My values in 3 words (from your good life sentences in week 7)","Section 3: What I do when I am struggling — coping anchor: breathe, walk, call someone","Print or hand-write it — make it physical, not digital"],
-     benefit:"Externalising personal norms creates psychological accountability and reduces the decision fatigue that leads to habit breakdown during high-stress periods.",
+     howTo:[
+       "One page. Print it or hand-write it — physical, not digital.",
+       "Section 1: My 5 non-negotiable daily habits (from your week 8 review).",
+       "Section 2: My values in 3 words (from your 'good life' sentences in week 7).",
+       "Section 3: What I do when I am struggling — 3 concrete anchors: breathe, walk, call one specific person.",
+       "Add a line at the bottom: the next check-in date (3 months from today).",
+       "Put it somewhere visible: fridge, desk, notebook cover. Re-read it weekly for the first month."
+     ],
+     benefit:"Baumeister & Tierney (Willpower, 2011) and subsequent implementation-intention research (Gollwitzer) show that externalising personal rules — putting them on paper, in advance — doubles adherence compared to holding them in memory alone. When a decision has already been made, high-stress moments do not have to be renegotiated, and willpower is preserved for the things that actually need it. A one-page wellbeing OS acts as a personal constitution — it is what you fall back on when you are tired, stressed or tempted to drop the habits that made the program work.",
      source:"Baumeister & Tierney, Willpower 2011",sourceUrl:"https://www.amazon.com/Willpower-Rediscovering-Greatest-Human-Strength/dp/0143122231"},
     {id:"w8h4",emoji:"🎯",title:"Celebrate — genuinely, specifically",micro:"Note what changed. Tell someone. Mark the moment.",time:"10 min",
-     howTo:["Write down 3 specific things that are different about you after 8 weeks","Tell one person who matters what you accomplished and why it was hard","Do something that feels like a genuine reward: a meal, an experience, a meaningful purchase","Set a 3-month check-in in your calendar to revisit your operating system"],
-     benefit:"Celebration triggers dopamine release and encodes the habit loop. BJ Fogg identifies celebration as the single most underused and most effective habit-formation tool.",
+     howTo:[
+       "Write down 3 specific things that are different about you after 8 weeks — energy, mood, sleep, relationships, focus, self-talk.",
+       "Tell one person who matters what you achieved and why it was hard. Out loud, in person if possible.",
+       "Do one genuine reward: a favourite meal, a trip, a meaningful purchase, an experience you have been postponing.",
+       "Take a photo of your wellbeing OS page next to a coffee — you will want the memory later.",
+       "Schedule a 3-month check-in in your calendar right now to re-read your page and re-run this reflection.",
+       "Say, explicitly: 'I did this. I am someone who follows through.' Identity is built from statements like that."
+     ],
+     benefit:"BJ Fogg (Tiny Habits, Stanford 2019) identifies deliberate celebration as the single most underused and most effective tool in habit formation — because the immediate positive emotion chemically encodes the habit loop in a way that delayed rewards cannot. Reviewing specific gains, telling others and marking the moment converts an 8-week effort into a durable identity shift: 'I am someone who invests in my wellbeing.' That identity is what keeps the habits running for months and years after the formal program ends — which is, ultimately, the only outcome that matters.",
+     source:"Fogg, Tiny Habits — Stanford 2019",sourceUrl:"https://tinyhabits.com"},
+  ]},
+];
+
+const PROGRAM_FR = [
+  {week:1,title:"Réinitialise ta biologie",theme:"Fondations circadiennes",color:"#B85A2A",light:"#FFF3EE",
+   tagline:"Aligne ton horloge biologique — tout le reste se construit là-dessus.",
+   science:"La synchronisation du rythme circadien (Saper et al., Science 2005) est le régulateur maître de l'humeur, de l'énergie et de la qualité du sommeil.",
+   habits:[
+    {id:"w1h1",emoji:"🌅",title:"Lumière du matin dans les 30 premières minutes",micro:"Sors 10 min — sans lunettes de soleil",time:"10 min",
+     howTo:[
+       "Programme un rappel récurrent sur ton téléphone intitulé « lumière », 15 minutes après ton réveil — indispensable les 3 premiers jours.",
+       "Sors dans les 30 minutes qui suivent ton réveil : un balcon, un jardin, le pas de porte ou un aller-retour à la boulangerie comptent.",
+       "Ne porte pas de lunettes de soleil : la lumière extérieure est 10 à 50× plus forte que la lumière intérieure, et tes yeux ont besoin du spectre complet.",
+       "Ciel clair : 5 à 10 minutes suffisent. Ciel couvert : vise 15 à 20 minutes. Pluie battante ou avant le lever du soleil : utilise une lampe de luminothérapie 10 000 lux.",
+       "Impossible de sortir ? Place-toi à moins d'un mètre d'une fenêtre grande ouverte, orientée vers la lumière — ne compte pas sur la lumière filtrée par un double-vitrage fermé.",
+       "Associe ce rituel à une routine existante (café dehors, balade du chien, 5 minutes d'étirement) pour qu'il devienne automatique en une semaine."
+     ],
+     benefit:"La lumière du matin dans les 30 minutes suivant le réveil est le zeitgeber le plus puissant — le signal biologique qui synchronise ton noyau suprachiasmatique, l'horloge maîtresse située dans l'hypothalamus. Elle déclenche un pic de cortisol qui booste la vigilance diurne et, 14 à 16 heures plus tard, la libération de mélatonine qui rend l'endormissement naturel. Les données du Huberman Lab et l'étude de Leproult & Van Cauter (Sleep, 2010) montrent que les personnes exposées régulièrement à la lumière matinale s'endorment plus vite, se réveillent moins la nuit et rapportent une humeur et une concentration nettement meilleures en 7 à 10 jours — gratuitement, sans aucun effet secondaire.",
+     source:"Huberman Lab / Leproult & Van Cauter, Sleep 2010",sourceUrl:"https://doi.org/10.1093/sleep/33.5.645"},
+    {id:"w1h2",emoji:"🛏️",title:"Heure de réveil fixe — 7 jours sur 7",micro:"Même heure le week-end. Non négociable.",time:"0 effort",
+     howTo:[
+       "Choisis une seule heure de réveil que tu peux tenir tous les jours — y compris les week-ends, les vacances et le lendemain d'une soirée tardive.",
+       "Une seule alarme, pas de snooze. Pose le téléphone (ou le réveil) à l'autre bout de la pièce : tu dois te lever pour l'éteindre.",
+       "Trop fatigué·e ? Couche-toi 30 minutes plus tôt ce soir, plutôt que de dormir plus tard demain. Ne rattrape jamais le sommeil en étirant la matinée.",
+       "Après une mauvaise nuit, accepte la fatigue et garde l'heure de réveil : ta pression de sommeil se reconstruit seule en 24 à 48 heures.",
+       "Les week-ends, c'est là que l'habitude se fait ou se défait : une grasse mat' de 90 minutes crée un mini jet-lag qui coûte toute la semaine.",
+       "Engage-toi sur 14 jours complets avant de juger l'effet — les 3 premiers matins sont les plus durs, après ça roule seul."
+     ],
+     benefit:"Phillips et al. (Science Advances, 2017) ont suivi des étudiants de Harvard et démontré que la régularité des horaires de sommeil prédit mieux les performances cognitives et l'humeur que le nombre total d'heures dormies. Les études qui ont suivi chez les adultes associent l'irrégularité du sommeil à un risque cardiovasculaire, métabolique et dépressif accru — indépendamment de la durée. Une heure de réveil fixe ancre tous les processus circadiens en aval : hormones de la faim, cycles de cortisol et de testostérone, température corporelle, fenêtres cognitives de pointe. C'est l'intervention sommeil la moins chère et la plus puissante qui existe, et contrairement à « dormir plus », elle ne coûte aucun temps supplémentaire.",
+     source:"Phillips et al., Science Advances 2017",sourceUrl:"https://doi.org/10.1126/sciadv.1601666"},
+    {id:"w1h3",emoji:"📵",title:"Téléphone hors de la chambre",micro:"Achète un réveil à 5 € ce soir",time:"5 min setup",
+     howTo:[
+       "Commande ou achète un réveil basique ce soir — on en trouve à moins de 10 € en supermarché ou pharmacie. Ne reporte pas cette étape.",
+       "Choisis un emplacement de recharge permanent hors de la chambre : entrée, cuisine, salon. Un seul endroit fixe, toujours le même.",
+       "Active « Ne pas déranger » de 21 h à 7 h — autorise les appels des « favoris » pour laisser passer les vraies urgences.",
+       "Préviens ton entourage la première semaine pour qu'on ne s'attende pas à des réponses tardives.",
+       "Si l'anxiété monte les 3 premières nuits (c'est fréquent), éloigne le téléphone davantage — surtout pas plus près de la porte de la chambre.",
+       "Remplace le scroll avant dodo par un livre, un carnet ou une pratique respiratoire courte — le vide doit être comblé, pas seulement créé."
+     ],
+     benefit:"Kushlev & Dunn (Computers in Human Behavior, 2015) ont montré que simplement réduire les consultations du téléphone produit une baisse mesurable du stress et une amélioration de l'attention en une semaine. Dormir avec son téléphone dans la chambre est corrélé à un sommeil plus court, plus de réveils nocturnes et un réveil plus difficile — parce que l'attente inconsciente d'une notification maintient le système nerveux en vigilance légère. Retirer physiquement le téléphone — plutôt que de compter sur la volonté — élimine le scroll du soir, le check nocturne et la dose de cortisol du matin avant même d'être debout. C'est l'un des changements environnementaux les moins coûteux aux bénéfices les plus composés.",
+     source:"Kushlev & Dunn, Computers in Human Behavior 2015",sourceUrl:"https://doi.org/10.1016/j.chb.2014.09.044"},
+    {id:"w1h4",emoji:"🔵",title:"Filtre lumière bleue auto à 19 h",micro:"Night Shift programmé — à configurer une fois, fini",time:"2 min setup",
+     howTo:[
+       "iPhone : Réglages → Luminosité & affichage → Night Shift → Programmation → de 19 h à 7 h, curseur sur « Plus chaud ».",
+       "Mac : Réglages Système → Moniteurs → Night Shift → Programmé → horaire personnalisé de 19 h à 7 h.",
+       "Android : Paramètres → Affichage → Confort visuel / mode nuit → Programmation → à partir du coucher du soleil.",
+       "Windows : Paramètres → Système → Affichage → Éclairage nocturne → Planifier → activé à partir de 19 h.",
+       "Pour un effet plus fort : installe f.lux sur l'ordinateur, ou porte des lunettes ambrées / orange anti-lumière bleue après 20 h.",
+       "Baisse la lumière générale le soir — privilégie lampes d'appoint, bougies, ampoules chaudes (2700 K ou moins) plutôt que les plafonniers vifs."
+     ],
+     benefit:"Chang et al. (PNAS, 2015) ont comparé la lecture sur liseuse rétroéclairée à un livre papier avant le coucher : la lumière bleue a supprimé la mélatonine de plus de 50 %, retardé l'endormissement de 10 minutes en moyenne, réduit le sommeil paradoxal et — surtout — rendu les participants plus somnolents le lendemain malgré un temps de sommeil identique. Les longueurs d'onde bleues (460 à 480 nm) sont exactement le signal que ton cerveau utilise pour détecter la lumière du jour : l'exposition en soirée lui fait croire qu'il est encore midi. Filtrer ces longueurs d'onde supprime ce faux signal et laisse la pression de sommeil s'installer naturellement — effet visible dès la première nuit.",
+     source:"Chang et al., PNAS 2015",sourceUrl:"https://doi.org/10.1073/pnas.1418490112"},
+  ]},
+  {week:2,title:"Le corps s'éveille",theme:"Bien-être incarné",color:"#A06B10",light:"#FFF8ED",
+   tagline:"Hydrate, respire, bouge — ton corps parle avant ton mental.",
+   science:"La recherche sur la cognition incarnée (Niedenthal, Science 2007) montre que les états corporels façonnent directement l'expérience émotionnelle et cognitive.",
+   habits:[
+    {id:"w2h1",emoji:"💧",title:"500 ml d'eau au réveil",micro:"Bouteille prête sur la table de nuit la veille",time:"2 min/j",
+     howTo:[
+       "Remplis un verre ou une bouteille de 500 ml tous les soirs et pose-le sur la table de nuit — fais-le au moment où tu te brosses les dents.",
+       "Bois le tout dans les 10 premières minutes du réveil, avant café, thé, nourriture ou téléphone.",
+       "Ajoute une pincée de sel de mer, un filet de citron ou un peu de mélange électrolytes pour améliorer l'absorption et compenser la perte de sodium nocturne.",
+       "L'eau à température ambiante s'absorbe plus vite que l'eau glacée — évite l'eau froide dès le réveil.",
+       "En déplacement ? Utilise la bouteille que tu as déjà — la régularité compte plus que le contenant.",
+       "Ancre le geste à une autre action matinale (poser le pied au sol, ouvrir les rideaux) pour le rendre automatique."
+     ],
+     benefit:"Ganio et al. (British Journal of Nutrition, 2011) ont montré qu'une déshydratation légère de 1 à 2 % — normale après une nuit sans apport liquide — dégrade la mémoire à court terme, la concentration, l'humeur et augmente la fatigue perçue en moins de 30 minutes. Ton corps perd 300 à 500 ml par nuit par la respiration et la transpiration, et la cortisolémie matinale déshydrate encore les cellules. Se réhydrater immédiatement restaure le volume plasmatique, soutient le débit sanguin cérébral, active la motilité digestive et fournit un coup de boost fiable. C'est l'intervention humeur + concentration la plus rapide de tout le programme.",
+     source:"Ganio et al., British Journal of Nutrition 2011",sourceUrl:"https://doi.org/10.1017/S0007114511002005"},
+    {id:"w2h2",emoji:"🌬️",title:"Respiration 4-7-8 — 4 cycles",micro:"Inspire 4 s · retiens 7 s · expire 8 s — avant tout écran",time:"2 min/j",
+     howTo:[
+       "Assieds-toi ou allonge-toi, dos droit. Place la pointe de la langue derrière les incisives supérieures pendant tout l'exercice.",
+       "Expire complètement par la bouche avec un léger « whoosh ».",
+       "Ferme la bouche et inspire calmement par le nez sur un compte de 4.",
+       "Retiens le souffle, immobile, sur un compte de 7.",
+       "Expire audiblement par la bouche sur un compte de 8 — deux fois plus long que l'inspiration.",
+       "Répète 4 cycles complets. Fais-le dès le matin et, idéalement, avant tout moment stressant (réunion, transport, coucher)."
+     ],
+     benefit:"La respiration lente à expiration prolongée, autour de 6 respirations par minute — la fréquence de résonance de la variabilité cardiaque — active le nerf vague et fait basculer le système nerveux autonome du sympathique (fuite-combat) au parasympathique (repos-digestion) en moins de 60 secondes. Brown & Gerbarg (J. Alternative & Complementary Medicine, 2005) et les essais cliniques qui ont suivi mesurent une baisse du cortisol, de la fréquence cardiaque, de la tension artérielle et de l'anxiété subjective dès la première séance. Contrairement à la méditation, aucun entraînement n'est requis : la physiologie est câblée et l'effet fonctionne dès le premier jour — ce qui en fait l'outil de régulation le plus proche d'un anxiolytique naturel.",
+     source:"Brown & Gerbarg, J. Alternative & Complementary Medicine 2005",sourceUrl:"https://doi.org/10.1089/acm.2005.11.189"},
+    {id:"w2h3",emoji:"☕",title:"Retarde ton premier café de 90 min",micro:"Le cortisol culmine la 1re heure — le café y est gâché",time:"0 effort",
+     howTo:[
+       "Programme un rappel « café autorisé » exactement 90 minutes après ton heure de réveil.",
+       "Remplis cette fenêtre avec eau, lumière, respiration et mouvement léger — c'est la pile énergie naturelle.",
+       "Déca, infusion ou eau chaude citronnée sont tolérés pendant la fenêtre d'attente.",
+       "Attends-toi à un léger mal de tête ou à du brouillard les 2 à 4 premiers jours si tu bois beaucoup de café — c'est un recalibrage de l'adénosine, pas un manque durable.",
+       "Reste sous 400 mg de caféine par jour, et coupe toute caféine au moins 8 heures avant ton heure de coucher cible.",
+       "Privilégie un café filtre ou un espresso léger sur un estomac peu chargé — ajoute un petit en-cas protéiné si tu sens des palpitations."
+     ],
+     benefit:"Le cortisol suit un pic naturel dans les 45 à 60 premières minutes après le réveil — la « réponse d'éveil du cortisol » — qui est ce qui te réveille vraiment. Boire du café dans cette fenêtre émousse l'effet du cortisol et accélère la tolérance à la caféine : il t'en faut davantage pour ressentir le même coup de boost. Lovallo et al. (Psychosomatic Medicine, 2006) ont montré qu'un timing stratégique de la caféine produit une vigilance subjective plus forte, avec une dose quotidienne totale plus faible et un crash d'après-midi atténué. Retarder aussi la première tasse rallonge l'écart entre la caféine et l'heure du coucher, ce qui protège le sommeil profond.",
+     source:"Lovallo et al., Psychosomatic Medicine 2006",sourceUrl:"https://doi.org/10.1097/01.psy.0000204926.97596.2a"},
+    {id:"w2h4",emoji:"🚶",title:"Marche 20 min — un ancrage quotidien",micro:"Remplace un segment de trajet de façon permanente",time:"20 min/j",
+     howTo:[
+       "Modifie un trajet existant de façon permanente : descends un arrêt de métro plus tôt, gare-toi 10 minutes plus loin, va à pied au déjeuner.",
+       "Pas de trajet quotidien ? Marche juste après le petit-déjeuner ou le déjeuner — marcher après un repas réduit aussi les pics de glycémie.",
+       "Garde le téléphone dans la poche, en silencieux — c'est un temps de réflexion, pas un temps de contenu.",
+       "Choisis l'itinéraire le plus vert ou le plus ouvert possible, même s'il est un peu plus long — la nature amplifie l'effet.",
+       "Marche à rythme de conversation — ce n'est pas du sport, c'est de l'hygiène de mouvement.",
+       "Pluie ou froid : mets la bonne veste et vas-y quand même. C'est en ratant la marche à cause de la météo que l'habitude meurt."
+     ],
+     benefit:"La marche quotidienne, non intentionnelle, est l'habitude de longévité la plus commune dans les cinq Zones Bleues (Buettner, National Geographic 2005 / 2023). Elle améliore la santé cardiovasculaire, réduit la mortalité toutes causes de 20 à 30 % à seulement 7 000–8 000 pas par jour, abaisse la glycémie, améliore la créativité (Stanford, 2014) et protège fortement contre la dépression. Contrairement au sport structuré, la marche ne demande aucune récupération, ne crée aucun risque de blessure, et se compose sans effort sur des décennies — c'est pour ça qu'elle surpasse presque n'importe quelle routine de salle dans les données longitudinales de longévité.",
+     source:"Buettner, Blue Zones — National Geographic 2005",sourceUrl:"https://www.bluezones.com"},
+  ]},
+  {week:3,title:"Architecture de la gratitude",theme:"Émotions positives",color:"#5C7A5C",light:"#EEF6EE",
+   tagline:"Reprogramme ta fréquence émotionnelle par défaut — avec précision, pas en généralités.",
+   science:"Les pratiques de gratitude du GGIA Berkeley sont parmi les interventions les plus répliquées de la psychologie positive, avec des tailles d'effet rivalisant avec la TCC pour la dépression légère.",
+   habits:[
+    {id:"w3h1",emoji:"✍️",title:"3 gratitudes spécifiques chaque soir",micro:"Cahier papier — sois précis·e, pas générique",time:"5 min/j",
+     howTo:[
+       "Chaque soir, pendant au moins une semaine, écris trois choses qui se sont bien passées aujourd'hui, et explique brièvement pourquoi elles se sont bien passées.",
+       "Utilise un vrai cahier papier — pas ton téléphone — et garde-le sur la table de nuit. Le support physique compte bien plus que de le faire dans sa tête.",
+       "Les items peuvent être petits ou importants : « je suis sorti·e du lit », « un collègue a ri de ma blague », « j'ai eu une promotion ».",
+       "Ajoute toujours le « pourquoi » : « le serveur s'est souvenu de ma commande — je me suis senti·e reconnu·e, ce qui est rare depuis que j'ai déménagé ».",
+       "Fais-le à la même heure chaque soir, idéalement 10 à 30 minutes avant de dormir, comme dernier geste de la journée.",
+       "Si tu sautes un jour, ne rattrape pas — reprends simplement demain. L'habitude, c'est la régularité, pas la perfection."
+     ],
+     benefit:"L'exercice « Trois bonnes choses » est l'une des interventions les plus répliquées de la psychologie positive. Dans l'étude phare de Seligman (2005) et Emmons & McCullough (2003), les participants qui l'ont pratiqué pendant une seule semaine ont rapporté un bonheur accru et moins de symptômes dépressifs — effets encore mesurables 6 mois plus tard. L'écriture sollicite la mémoire épisodique plus profondément que la pensée, entraîne le cerveau à scanner les événements positifs de la journée, et contrebalance le biais de négativité que l'évolution a câblé. 5 minutes, gratuit. Le Greater Good Science Center de UC Berkeley le classe parmi ses pratiques à plus fort impact.",
+     source:"Emmons & McCullough, J. Personality & Social Psychology 2003",sourceUrl:"https://doi.org/10.1037/0022-3514.84.2.377"},
+    {id:"w3h2",emoji:"💌",title:"Écris une lettre de gratitude cette semaine",micro:"À qui tu veux, vivant ou non. Pas besoin de l'envoyer.",time:"20 min une fois",
+     howTo:[
+       "Choisis une personne qui a eu un impact réel sur ta vie et que tu n'as jamais vraiment remerciée — un·e prof, mentor, parent, ami·e.",
+       "Écris une vraie lettre (300+ mots) : décris précisément ce qu'elle a fait, comment ça t'a affecté·e, et où tu en es aujourd'hui grâce à elle.",
+       "Utilise des détails concrets, pas des généralités — nomme le moment, les mots, le sentiment.",
+       "Tu n'es pas obligé·e de l'envoyer. Mais si tu peux la livrer en personne et la lire à voix haute, l'effet mesuré est nettement plus grand pour les deux.",
+       "Si la personne est décédée, écris-la quand même — le bénéfice vient de l'auteur, pas du destinataire.",
+       "Garde une copie. Relis-la la prochaine fois que tu te sens plat·e ou déconnecté·e."
+     ],
+     benefit:"Dans Seligman et al. (American Psychologist, 2005), la lettre de gratitude a produit la plus grande et la plus durable augmentation de bonheur de toutes les interventions testées en psychologie positive — plus grande que la méditation, la pleine conscience, les forces de signature ou les trois bonnes choses. Les participants qui l'ont livrée en personne présentaient encore des gains mesurables un mois plus tard. L'acte d'écrire force le cerveau à traduire une reconnaissance floue en mémoire causale spécifique, ce qui active les circuits de récompense et consolide une lecture plus généreuse de sa propre histoire. GGIA Berkeley la classe comme une pratique de tout premier plan — 20 minutes, une seule fois, effet durable.",
+     source:"Seligman et al., American Psychologist 2005",sourceUrl:"https://doi.org/10.1037/0003-066X.60.5.410"},
+    {id:"w3h3",emoji:"🌸",title:"Savoure un moment par jour — yeux ouverts",micro:"30 secondes. Remarque texture, son, température.",time:"30 s/j",
+     howTo:[
+       "Choisis un moment qui existe déjà dans ta journée — première gorgée de café, un repas, une marche, le soleil sur ton visage.",
+       "Au moment venu : stop. Pose le téléphone. Prends une respiration lente.",
+       "Remarque trois détails sensoriels : un son, une texture, une température ou une odeur.",
+       "Dis-toi intérieurement : « je suis ici, et c'est bon ». Tiens le moment 20 à 30 secondes — ne le traverse pas à toute vitesse.",
+       "Reviens au même moment chaque jour pour ancrer l'habitude — la nouveauté n'est pas le point, l'attention si.",
+       "Pas d'app, pas de minuteur, pas de photo : savourer à travers un écran, ce n'est plus savourer."
+     ],
+     benefit:"Le savouring — l'amplification et la prolongation délibérée d'une expérience positive — est l'une des compétences du bonheur les plus efficaces et les moins pratiquées. Bryant & Veroff (2007) et les études ultérieures montrent qu'il augmente indépendamment la satisfaction de vie sur 4 semaines et interrompt directement l'adaptation hédonique, le processus par lequel le cerveau filtre les stimuli positifs récurrents. Juste 20 à 30 secondes d'attention pleine transforment un événement banal en souvenir positif stocké, constituant une réserve émotionnelle dans laquelle puiser pendant les périodes plus difficiles. C'est la mise à niveau la moins chère possible des expériences que tu vis déjà.",
+     source:"Bryant & Veroff, Savoring: A New Model of Positive Experience 2007",sourceUrl:"https://greatergood.berkeley.edu/topic/savoring"},
+    {id:"w3h4",emoji:"🍽️",title:"Un repas sans écran, assis·e, par jour",micro:"Commence par le déjeuner. Téléphone dans un tiroir.",time:"Quotidien",
+     howTo:[
+       "Commence par le repas le plus facile — souvent le déjeuner, puis un dîner, puis le petit-déjeuner.",
+       "Téléphone face contre tiroir, sac ou autre pièce — jamais à côté de l'assiette.",
+       "Assieds-toi à table. Manger debout ou au bureau ne compte pas.",
+       "Mâche chaque bouchée un peu plus que naturellement, et repose la fourchette entre les bouchées.",
+       "Remarque 3 choses sur le plat : température, texture, une note de saveur.",
+       "Si tu manges à plusieurs, utilise le temps pour une vraie conversation — pas de télé en fond."
+     ],
+     benefit:"Manger en conscience réduit de manière fiable les portions de 20 à 30 % sans effort conscient, améliore la digestion via l'activation parasympathique et renforce les signaux naturels de faim et de satiété que les distractions suppriment (Allirot et al., British Journal of Nutrition, 2013). Manger en scrollant ou devant un écran te déconnecte du feedback intéroceptif — c'est pour ça qu'il est si facile de finir un paquet de chips devant une série sans s'en apercevoir. Un seul repas sans écran par jour est la plus petite dose qui produise encore un changement mesurable sur la quantité mangée et le plaisir retiré.",
+     source:"Allirot et al., British Journal of Nutrition 2013",sourceUrl:"https://doi.org/10.1017/S0007114512004540"},
+  ]},
+  {week:4,title:"Vitalité sociale",theme:"Richesse relationnelle",color:"#2A6B8A",light:"#EBF5FA",
+   tagline:"Le meilleur prédicteur d'une vie longue et heureuse, c'est la qualité de tes relations.",
+   science:"L'étude Harvard sur le développement adulte (80 ans, 724 hommes) a montré que la qualité des relations bat le revenu, le QI, les gènes et la classe sociale comme prédicteur du bien-être.",
+   habits:[
+    {id:"w4h1",emoji:"🤝",title:"Une conversation profonde par jour",micro:"Appel, pas texto. Sans agenda. Écoute plus que tu ne parles.",time:"15 min/j",
+     howTo:[
+       "Privilégie la voix (ou la visio) au texto — le ton de la voix transmet 40 % de l'information émotionnelle que l'écrit ne capte pas.",
+       "Commence par une vraie question : « Comment tu vas, vraiment ? » ou « Qu'est-ce qui t'occupe cette semaine ? ». Passe la météo.",
+       "Écoute sans préparer ta prochaine phrase. Pose une relance avant de partager ton propre avis.",
+       "Vise au moins une personne par jour — famille, ami·e, collègue, voisin·e. Fais tourner la liste, n'appelle pas toujours la même personne.",
+       "15 minutes suffisent. La qualité l'emporte sur la durée.",
+       "Journée trop chargée ? Envoie un mémo vocal de 30 secondes avec une vraie question. Mieux qu'un texto, mieux que rien."
+     ],
+     benefit:"L'étude Harvard sur le développement adulte — la plus longue étude longitudinale jamais menée sur le bien-être humain (80+ ans, 724 hommes, puis leurs conjointes et enfants) — conclut que la qualité des relations est le meilleur prédicteur de santé et de bonheur à 80 ans, plus fort que le cholestérol, les revenus, le QI ou la classe sociale (Waldinger & Schulz, The Good Life, 2023). Même des contacts brefs et réguliers, mais significatifs, activent la libération d'ocytocine, amortissent le cortisol et soutiennent la fonction immunitaire. Les conversations profondes ne demandent ni budget, ni calendrier, ni voyage — juste de décrocher le téléphone et d'écouter vraiment pendant 15 minutes.",
+     source:"Waldinger & Schulz, The Good Life 2023",sourceUrl:"https://www.goodlifeproject.com"},
+    {id:"w4h2",emoji:"🎁",title:"Un acte de bonté par jour",micro:"Spécifique, spontané, dirigé vers une personne",time:"Quotidien",
+     howTo:[
+       "Rends-le spécifique et personnel — une action directe envers une personne que tu peux voir, pas un don abstrait.",
+       "Exemples : prépare le café d'un collègue, texte « j'ai pensé à toi aujourd'hui », tiens l'ascenseur, laisse passer la voiture derrière.",
+       "Fais tourner les destinataires sur la semaine — ne donne pas toujours à la même personne.",
+       "Quand c'est possible, fais-le en silence — la bonté anonyme active plus nettement le circuit de récompense que la bonté applaudie.",
+       "Observe ce que tu ressens les 10 minutes qui suivent — c'est la signature dopamine + ocytocine que tu entraînes.",
+       "Une fois la dose quotidienne bien ancrée, choisis un « gros » acte par mois : don, bénévolat, aider quelqu'un à déménager."
+     ],
+     benefit:"Les actes de bonté répétés augmentent la satisfaction de vie, l'estime de soi, l'humeur et même des marqueurs de santé physique à travers des dizaines d'essais. Dunn, Aknin & Norton (Science, 2008) ont démontré que dépenser pour les autres produit plus de bonheur que dépenser pour soi-même, pour un même montant — effet répliqué dans des pays aux niveaux de revenu très différents. Les actes bienveillants libèrent de l'ocytocine, réduisent l'anxiété sociale par exposition positive répétée et renforcent le sentiment de connexion sociale chez celui qui donne. La fréquence compte plus que la taille : un petit acte spécifique chaque jour surpasse un gros acte par mois.",
+     source:"Dunn, Aknin & Norton, Science 2008",sourceUrl:"https://doi.org/10.1126/science.1150952"},
+    {id:"w4h3",emoji:"📞",title:"Remplace un scroll par un vrai appel",micro:"Quelqu'un à qui tu voulais donner des nouvelles",time:"Quotidien",
+     howTo:[
+       "Repère ton créneau de scroll habituel : transport, pause déj', avant de dormir, salle d'attente.",
+       "Remplace-le une fois par jour par un appel — pas un texto, pas un like.",
+       "Tiens une liste tournante de 5 personnes à qui tu dois un appel, et pioche dedans.",
+       "Ouverture qui marche 9 fois sur 10 : « Je pensais à toi — tu as 5 minutes ? ».",
+       "5 minutes comptent. Même les appels brefs et inattendus produisent des gains mesurables de bien-être pour les deux.",
+       "Pas de réponse ? Laisse un message vocal chaleureux — l'habitude, c'est le geste, pas le décrochage."
+     ],
+     benefit:"Epley & Schroeder (Journal of Experimental Psychology: General, 2014) ont mené une série d'expériences de terrain qui montrent que les gens sous-estiment systématiquement à quel point eux-mêmes et l'autre personne apprécieront un contact inattendu — un biais robuste qu'ils nomment « undersociality ». Quand les participants franchissent l'hésitation et passent l'appel, l'humeur, le sentiment de connexion et même le sens de la vie augmentent bien plus que ce qu'ils avaient prédit. Échanger 10 minutes de scroll contre 10 minutes de voix, c'est remplacer une activité qui épuise la dopamine par une qui produit de l'ocytocine — un deal presque parfait pour ton système nerveux.",
+     source:"Epley & Schroeder, J. Experimental Psychology 2014",sourceUrl:"https://doi.org/10.1037/xge0000030"},
+    {id:"w4h4",emoji:"🫂",title:"Exprime ta reconnaissance à une personne aujourd'hui",micro:"Spécifique, sincère, à voix haute ou par écrit",time:"2 min/j",
+     howTo:[
+       "Choisis une personne de ta journée. Dis — ou écris — exactement ce que tu apprécies et pourquoi.",
+       "Spécifique, pas générique : « J'ai apprécié ta gestion de la réunion — ton calme m'a permis de rester concentré·e. »",
+       "Le contact visuel amplifie l'effet des deux côtés. Fais-le en personne dès que possible.",
+       "Pour un message écrit, utilise une vraie phrase, pas un emoji — c'est la précision qui fait mouche.",
+       "Ça marche aussi avec des inconnus : « Vous avez rendu ce moment vraiment agréable, merci » à une caissière ou un chauffeur — zéro coût, impact réel.",
+       "Une fois par semaine, fais-le pour quelqu'un que tu vois trop pour normalement remercier — partenaire, parent, ami·e proche."
+     ],
+     benefit:"Exprimer de la reconnaissance renforce les liens relationnels, augmente la proximité ressentie et active le système de récompense du donneur aussi fortement que celui du receveur (GGIA Berkeley ; Algoe, 2012). Contrairement à un « merci » générique, une reconnaissance spécifique oblige le cerveau à reconstruire exactement pourquoi l'action comptait, ce qui encode l'association positive plus profondément chez les deux. Les couples qui pratiquent régulièrement la reconnaissance spécifique rapportent une satisfaction relationnelle plus élevée et des taux de rupture plus bas. À l'échelle individuelle, c'est une intervention quasi gratuite qui entraîne à scanner activement ce qui va bien dans ton monde social au lieu de basculer par défaut vers la critique.",
+     source:"GGIA Berkeley — Expressing Gratitude practice",sourceUrl:"https://ggia.berkeley.edu/practice/gratitude_letter"},
+  ]},
+  {week:5,title:"Attention consciente",theme:"Présence et émerveillement",color:"#6B4A9A",light:"#F3F0FA",
+   tagline:"Là où va l'attention, le bien-être suit.",
+   science:"Le MBSR est l'une des interventions psychologiques les plus étudiées, avec des changements cérébraux structuraux mesurables après seulement 8 semaines.",
+   habits:[
+    {id:"w5h1",emoji:"🧘",title:"10 minutes de méditation — chaque matin",micro:"Petit Bambou · Headspace · ou suis ta respiration",time:"10 min/j",
+     howTo:[
+       "Fais-le avant de consulter emails, réseaux sociaux ou actus — idéalement juste après ton exposition à la lumière matinale.",
+       "Utilise une app guidée les 2 premières semaines : Petit Bambou, Headspace, Waking Up ou Calm sont toutes bien conçues.",
+       "Assieds-toi droit·e, sur une chaise ou un coussin. S'allonger endort la plupart des débutants.",
+       "Ferme les yeux. Pose l'attention sur la sensation simple de la respiration — sans chercher à la contrôler.",
+       "Quand le mental s'éloigne (il le fera, sans arrêt), remarque-le doucement et reviens — ce « remarquer et revenir » EST l'exercice.",
+       "Jour manqué ? Assieds-toi le lendemain matin. N'abandonne pas la première semaine à cause d'une séance sautée."
+     ],
+     benefit:"Hölzel et al. (Psychiatry Research: Neuroimaging, 2011) ont montré qu'après seulement 8 semaines de méditation quotidienne, les IRM révélaient une augmentation de la densité de matière grise dans le cortex préfrontal, l'hippocampe et l'insula, ainsi qu'une baisse de la réactivité de l'amygdale face au stress. Les méta-analyses des essais MBSR rapportent une réduction moyenne de l'anxiété d'environ 38 % et des améliorations significatives de l'attention, de la régulation émotionnelle et du sommeil. Dix minutes par jour — moins qu'une pause café — est la dose qui produit régulièrement des effets mesurables. Contrairement à la plupart des interventions, les bénéfices continuent de s'accumuler pendant des années, ce qui en fait la compétence mentale à plus fort levier du programme.",
+     source:"Holzel et al., Psychiatry Research: Neuroimaging 2011",sourceUrl:"https://doi.org/10.1016/j.pscychresns.2010.08.006"},
+    {id:"w5h2",emoji:"😮",title:"Marche d'émerveillement — une fois par semaine",micro:"Marche lentement. Lève la tête. Remarque l'échelle, la beauté.",time:"20 min/sem",
+     howTo:[
+       "Bloque 20 minutes dans ton agenda une fois par semaine — un dimanche matin est un créneau facile.",
+       "Marche seul·e — l'awe est plus difficile à ressentir en conversation.",
+       "Cherche la vastité : regarde les arbres, le ciel, les vieux bâtiments, l'eau, les montagnes, les étoiles.",
+       "Marche lentement. Laisse-toi t'arrêter. L'enjeu est de remarquer, pas de faire des kilomètres.",
+       "Protocole UC Berkeley : prends une photo rapide d'une chose qui t'a touché·e — ça aide à ancrer l'état.",
+       "Après coup, note en une phrase ce qui t'a surpris·e. Sur plusieurs semaines, des motifs émergent."
+     ],
+     benefit:"Sturm et al. (Emotion, 2022), du laboratoire de Dacher Keltner à UC Berkeley, ont mené la fameuse étude de la « marche d'émerveillement » : des personnes âgées ayant pratiqué une marche de 15 minutes centrée sur l'awe une fois par semaine pendant 8 semaines ont rapporté significativement plus d'émotions positives et, sur leurs selfies, se dessinaient plus petites dans le cadre (un marqueur mesurable de la réduction de l'auto-préoccupation), par rapport aux marcheurs ordinaires. L'émerveillement — ressentir quelque chose de vaste qui élargit ton cadre mental — réduit les marqueurs inflammatoires, détourne l'attention de la rumination et booste l'humeur. 20 minutes par semaine, zéro coût.",
+     source:"Sturm et al., Emotion 2022 — Keltner Lab, UC Berkeley",sourceUrl:"https://doi.org/10.1037/emo0000876"},
+    {id:"w5h3",emoji:"🔕",title:"Une heure sans écran par jour",micro:"Même heure chaque jour — la régularité > la durée",time:"60 min/j",
+     howTo:[
+       "Choisis la même heure chaque jour — matin avant le travail, ou soir après le dîner. Pas un créneau aléatoire.",
+       "L'écart physique bat la volonté : téléphone dans un tiroir ou une autre pièce, notifications coupées sur l'ordinateur.",
+       "Remplis l'heure délibérément — lecture, cuisine, marche, hobby, conversation, bain — plutôt que d'espérer que l'ennui se résolve seul.",
+       "Commence par 30 minutes si 60 te paraît impossible, puis ajoute 10 minutes par semaine jusqu'à atteindre l'heure.",
+       "Préviens une personne de ton entourage pour qu'on ne s'attende pas à une réponse pendant ce créneau.",
+       "Ne compense pas l'heure gagnée par une heure de scroll supplémentaire ensuite — sinon tu annules tout."
+     ],
+     benefit:"Les travaux de Kushlev & Dunn sur l'usage du smartphone (2015, et suites) et la synthèse de Cal Newport (« Digital Minimalism », 2019) convergent : une fenêtre prévisible et protégée sans input numérique est plus efficace pour réduire l'anxiété et restaurer l'attention que d'essayer de réduire le temps d'écran total. Le réseau du mode par défaut du cerveau — associé à la réflexion, à la créativité et à la consolidation mnésique — ne s'active que lorsque l'input s'arrête. Une heure quotidienne et récurrente sans numérique donne à ce réseau un espace fiable pour fonctionner, et est corrélée à une baisse de la rumination, un meilleur sommeil et un sens de la vie plus élevé.",
+     source:"Newport, Deep Work 2016 / Kushlev & Dunn 2015",sourceUrl:"https://doi.org/10.1016/j.chb.2014.09.044"},
+    {id:"w5h4",emoji:"🌿",title:"Passe 20 min dans la nature aujourd'hui",micro:"Parc, jardin, bord d'eau — pas un fond d'écran",time:"20 min/j",
+     howTo:[
+       "Repère l'espace vert ou bleu le plus proche — parc, jardin, berge, canal, chemin forestier, littoral.",
+       "Vise au moins 120 minutes cumulées par semaine — réparties comme tu veux (20 min/j, ou 2 × 60 min).",
+       "Marche ou assieds-toi — les deux marchent. La dose, c'est l'exposition, pas l'effort.",
+       "Retire tes écouteurs au moins une fois par semaine — les sons naturels ont un effet apaisant indépendant.",
+       "Pas de grand parc à proximité ? Les rues bordées d'arbres, un jardin partagé, un balcon plein de plantes comptent aussi.",
+       "Par mauvais temps, 10 minutes debout sous un arbre sous la pluie valent mieux qu'un scroll à l'intérieur."
+     ],
+     benefit:"White et al. (Scientific Reports, 2019) ont analysé près de 20 000 personnes et trouvé que passer au moins 120 minutes par semaine en milieu naturel est le seuil à partir duquel on rapporte une santé et un bien-être nettement meilleurs — effet qui plafonne autour de 200 à 300 minutes. Hunter et al. (Frontiers in Psychology, 2019) ont mesuré le cortisol salivaire et trouvé que 20 à 30 minutes de contact avec la nature produisent le plus grand effet anti-stress par minute. L'exposition à la nature abaisse le cortisol, la tension artérielle et la rumination, tout en augmentant l'affect positif et la récupération attentionnelle — un rendement exceptionnellement élevé pour quelque chose de gratuit et sans compétence requise.",
+     source:"Hunter et al., Frontiers in Psychology 2019",sourceUrl:"https://doi.org/10.3389/fpsyg.2019.00722"},
+  ]},
+  {week:6,title:"Mouvement & résilience",theme:"Fondation physique",color:"#8A4A2A",light:"#FBF0EB",
+   tagline:"Ton corps est ton plus ancien outil de régulation émotionnelle.",
+   science:"L'exercice est désormais un traitement de première ligne de la dépression légère à modérée dans les recommandations NICE (2022), avec des tailles d'effet équivalentes aux antidépresseurs.",
+   habits:[
+    {id:"w6h1",emoji:"🏃",title:"Exercice aérobie 3× cette semaine",micro:"20 à 30 min à intensité conversationnelle",time:"3×20 min",
+     howTo:[
+       "Choisis n'importe quelle activité aérobie déjà tolérée : marche rapide, vélo, jogging, natation, danse, rando.",
+       "Intensité cible : tu peux dire une phrase mais pas chanter confortablement. Soit environ 60 à 75 % de ta fréquence cardiaque max.",
+       "Planifie les 3 séances dans ton agenda maintenant, comme des rendez-vous fixes avec toi-même.",
+       "Plus court vaut mieux que sauté : 15 minutes comptent sur une mauvaise journée.",
+       "Associe les séances à quelque chose que tu aimes déjà — une playlist préférée, un podcast, un·e partenaire de marche.",
+       "Séance ratée ? Fais juste la suivante. Jamais de double session pour compenser."
+     ],
+     benefit:"Chekroud et al. (The Lancet Psychiatry, 2018) ont analysé la santé mentale auto-déclarée de 1,2 million d'Américains et trouvé que les personnes qui faisaient de l'exercice régulier vivaient 43 % de « mauvais jours mentaux » en moins par mois que celles qui n'en faisaient pas — effet plus grand que n'importe quel autre facteur modifiable étudié, y compris le revenu et l'éducation. Le mécanisme : l'exercice augmente le BDNF (facteur neurotrophique, littéralement l'engrais du cerveau), réduit l'inflammation systémique et booste l'humeur aiguë via la libération d'endocannabinoïdes et de dopamine. Les recommandations NICE (UK) listent désormais l'exercice aérobie comme traitement de première ligne de la dépression légère à modérée, avec des effets équivalents aux ISRS et bien moins d'effets secondaires.",
+     source:"Chekroud et al., The Lancet Psychiatry 2018",sourceUrl:"https://doi.org/10.1016/S2215-0366(18)30227-X"},
+    {id:"w6h2",emoji:"🌡️",title:"Termine la douche par 30 s d'eau froide",micro:"Chaud d'abord, froid à la fin. Respire à travers.",time:"Quotidien",
+     howTo:[
+       "Termine ta douche chaude habituelle normalement — c'est un ajout, pas un remplacement.",
+       "Passe le robinet totalement froid pendant 30 secondes à la fin, en commençant par les pieds et en remontant.",
+       "Respire lentement et profondément par le nez — l'envie de haleter passe en 10 à 15 secondes.",
+       "Ajoute 15 secondes par semaine jusqu'à atteindre 2 à 3 minutes au total.",
+       "Fais-le le matin, pas avant de dormir — le pic de noradrénaline dure plusieurs heures.",
+       "Saute-le si tu as une hypertension non contrôlée ou une pathologie cardiaque — demande toujours à ton médecin d'abord."
+     ],
+     benefit:"Šrámek et al. et Shevchuk (Medical Hypotheses, 2008) documentent qu'une courte exposition au froid augmente la noradrénaline de 200 à 300 % et la dopamine d'environ 250 % — effets qui durent 2 à 4 heures. Résultat : vigilance soutenue sans le crash de la caféine, marqueurs inflammatoires en baisse, et une réduction régulièrement observée de la fatigue chronique avec une amélioration de l'humeur chez les adultes en bonne santé. Au-delà de la chimie, le geste quotidien de faire volontairement quelque chose d'inconfortable entraîne une petite dose de résilience psychologique — tu t'apprends que l'inconfort est tolérable et borné dans le temps, ce qui se transfère à d'autres moments stressants de ta journée.",
+     source:"Shevchuk, Medical Hypotheses 2008",sourceUrl:"https://doi.org/10.1016/j.mehy.2007.04.052"},
+    {id:"w6h3",emoji:"📦",title:"Désencombre un espace que tu utilises chaque jour",micro:"Bureau, table de nuit, plan de travail — un seul",time:"30 min une fois",
+     howTo:[
+       "Choisis une seule surface — bureau, table de nuit, plan de travail, étagère de salle de bain. Pas une pièce entière.",
+       "Vide-la complètement, puis applique la règle des 3 boîtes : garder, donner, jeter.",
+       "Ne remets que ce que tu utilises vraiment dans une semaine normale. Sois honnête.",
+       "Applique la règle « 1 qui entre, 1 qui sort » à cette surface à partir de maintenant.",
+       "Prends une photo avant/après — le progrès visible est une motivation forte pour s'attaquer à la suivante.",
+       "Refais l'exercice sur une nouvelle surface chaque semaine jusqu'à ce que les zones clés de ton logement soient calmes."
+     ],
+     benefit:"McMains & Kastner (Journal of Neuroscience, 2011), en utilisant l'IRMf à Princeton, ont démontré que l'encombrement visuel dans ton environnement entre en compétition pour les ressources neurales et réduit mesurablement la capacité du cerveau à se concentrer sur une tâche. Des travaux ultérieurs associent les environnements désordonnés à des niveaux de cortisol plus élevés, en particulier chez les femmes. Désencombrer un seul espace fréquemment utilisé réduit la charge cognitive de fond chaque fois que tu le regardes, abaisse la fatigue décisionnelle quotidienne et produit un petit mais fiable coup d'humeur pendant plusieurs semaines — l'un des investissements 30-minutes les plus rentables que tu puisses faire.",
+     source:"McMains & Kastner, J. Neuroscience 2011",sourceUrl:"https://doi.org/10.1523/JNEUROSCI.6138-10.2011"},
+    {id:"w6h4",emoji:"🥦",title:"Redessine ton environnement alimentaire",micro:"Sain à hauteur des yeux. Snacks cachés au fond.",time:"20 min une fois",
+     howTo:[
+       "Déplace fruits, légumes et protéines à l'avant et au centre de ton frigo, à hauteur des yeux.",
+       "Pose une coupe de fruits sur le plan de travail — la nourriture visible est celle qui est mangée.",
+       "Déplace sucreries, chips et alcool en hauteur ou dans des contenants opaques, tout au fond.",
+       "Lave, coupe et portionne tes légumes le jour des courses, pour qu'ils soient aussi pratiques qu'un paquet de chips.",
+       "Garde des protéines prêtes à l'emploi (œufs, yaourt, tofu, poulet) dans des contenants transparents à hauteur des yeux.",
+       "N'achète pas ce que tu ne veux pas manger — tu ne résistes pas à ce qui est déjà dans le placard à 22 h."
+     ],
+     benefit:"Les travaux de Brian Wansink au Cornell Food & Brand Lab, et les études de réplication qui ont suivi, estiment qu'environ 70 % des décisions alimentaires quotidiennes sont dictées par des signaux environnementaux — visibilité, commodité, taille de portion, couleur de l'assiette — plutôt que par la faim consciente ou la volonté. De petits changements de friction (chips en hauteur, fruits en évidence) produisent des améliorations alimentaires durables, sans effort de régime. Comme le changement se fait une fois et tourne ensuite en pilote automatique, c'est l'une des rares interventions alimentaires dont l'effet ne s'érode pas avec le temps.",
+     source:"Wansink, Mindless Eating — Cornell Food & Brand Lab",sourceUrl:"https://doi.org/10.1093/jn/nxac141"},
+  ]},
+  {week:7,title:"Compassion & sens",theme:"Boussole intérieure",color:"#2A7A6A",light:"#EBF6F4",
+   tagline:"Te traiter avec la gentillesse que tu offrirais à un ami n'est pas une faiblesse — c'est de la neurosciences.",
+   science:"Les travaux de Kristin Neff sur l'auto-compassion montrent qu'elle prédit mieux la résilience émotionnelle que l'estime de soi, sans les effets secondaires narcissiques de cette dernière.",
+   habits:[
+    {id:"w7h1",emoji:"💙",title:"Pratique d'auto-compassion — 5 min/j",micro:"Que dirais-tu à un·e ami·e dans la même situation ? Dis-le-toi.",time:"5 min/j",
+     howTo:[
+       "Quand tu remarques une auto-critique, fais une pause et demande : « Que dirais-je à un·e proche qui me raconterait ça ? ».",
+       "Dis cette phrase à toi-même — à voix haute si possible, ou en silence mais avec conviction.",
+       "Place une main sur ton cœur ou ta joue. Le geste physique active le système de soin (caregiving) des mammifères.",
+       "Nomme l'émotion à voix haute : « ceci est du stress », « ceci est de la déception ». Le fait de nommer réduit l'intensité (Lieberman, UCLA).",
+       "Rappelle-toi que cette expérience fait partie de l'humain — « d'autres ressentent ça aussi » — pas un échec personnel.",
+       "Version écrite optionnelle : 3 phrases bienveillantes pour toi-même chaque soir, dans ton journal."
+     ],
+     benefit:"Les deux décennies de recherche de Kristin Neff (Neff & Germer, J. Clinical Psychology, 2013, et de nombreuses réplications) montrent que l'auto-compassion réduit l'anxiété, la dépression, le perfectionnisme et la rumination — tout en augmentant la motivation, l'apprentissage à partir des erreurs et la résilience après un échec. Contrairement à l'estime de soi, qui nécessite un flux constant de succès et peut produire des effets secondaires narcissiques, l'auto-compassion reste disponible pendant l'échec — exactement le moment où tu en as le plus besoin. Les méta-analyses rapportent des tailles d'effet comparables aux interventions TCC établies, sans inconvénient et sans coût.",
+     source:"Neff & Germer, J. Clinical Psychology 2013",sourceUrl:"https://doi.org/10.1002/jclp.21923"},
+    {id:"w7h2",emoji:"🌟",title:"Identifie une source de sens aujourd'hui",micro:"Pas un objectif. Un moment, une personne, un pourquoi.",time:"2 min/j",
+     howTo:[
+       "Chaque matin, demande-toi : « Qu'est-ce qui ferait que cette journée en vaut la peine ? ».",
+       "Garde-le petit et concret — une bonne conversation, une tâche bien faite, aider quelqu'un, un moment de beauté.",
+       "Écris-le dans ton journal ou une note téléphone (3 à 8 mots suffisent).",
+       "Le soir, regarde si c'est arrivé et ce que tu as ressenti. Note ce qui t'a surpris·e.",
+       "Les jours difficiles, la réponse peut simplement être « traverser avec douceur » — ça compte aussi.",
+       "À la fin de la semaine, relis tes 7 réponses. Les motifs révèlent autour de quoi ta vie s'organise vraiment."
+     ],
+     benefit:"Fredrickson et al. (PNAS, 2013) ont montré que le bien-être eudémonique — celui qui vient du sens et du but plutôt que du plaisir seul — est associé à un profil d'expression génétique distinct, avec moins d'inflammation et une meilleure réponse antivirale. Les études longitudinales trouvent aussi qu'un sens soutenu prédit une espérance de vie plus longue, un risque d'Alzheimer plus faible et une meilleure résilience au stress. Une pratique quotidienne de 2 minutes pour nommer ton « pourquoi » ne remplace pas un travail de fond sur le sens — mais elle te garde connecté·e à lui à l'échelle de la vraie vie, là où les journées se brouillent sans intention.",
+     source:"Fredrickson et al., PNAS 2013",sourceUrl:"https://doi.org/10.1073/pnas.1305419110"},
+    {id:"w7h3",emoji:"🎨",title:"Une heure de flow par semaine",micro:"Quelque chose d'absorbant, non numérique, à ta hauteur",time:"60 min/sem",
+     howTo:[
+       "Choisis une activité stimulante mais juste à la hauteur de tes compétences — trop facile, c'est l'ennui ; trop dur, la frustration.",
+       "Bons candidats : cuisiner une recette nouvelle, jouer d'un instrument, dessiner, bricoler, jardiner, grimper, écrire, faire du sport.",
+       "Bloque 60 minutes d'affilée dans ton agenda. Zéro notification. Pas de multitâche.",
+       "Lance un minuteur — le flow met généralement 15 à 20 minutes à démarrer, donc toute distraction remet le chrono à zéro.",
+       "Si tu résistes à commencer, engage-toi sur 10 minutes seulement — l'énergie d'activation est l'endroit où les séances de flow meurent.",
+       "Sur plusieurs semaines, observe quelles activités produisent vraiment l'état absorbé — et fais-en davantage."
+     ],
+     benefit:"Les travaux originaux de Mihaly Csikszentmihalyi (1975–1990) et les décennies de réplications qui ont suivi montrent que les expériences régulières de flow sont parmi les corrélats les plus forts de la satisfaction de vie, de la motivation intrinsèque et du bonheur à long terme — plus fort que presque n'importe quelle condition matérielle. En flow, l'auto-monitoring et la perception du temps s'effacent, la concentration est sans effort, et le cerveau consolide les compétences plus vite qu'en pratique forcée. Une heure protégée par semaine est la dose minimale qui produise un effet détectable sur l'humeur hebdomadaire, et cet effet se compose au fur et à mesure que ta compétence grandit.",
+     source:"Csikszentmihalyi, Flow: The Psychology of Optimal Experience 1990",sourceUrl:"https://ggia.berkeley.edu/practice/find_your_flow_activities"},
+    {id:"w7h4",emoji:"🌱",title:"Écris ta « bonne vie » en 3 phrases",micro:"Pas des objectifs. À quoi ressemble une bonne journée, une bonne année, une bonne vie ?",time:"10 min une fois",
+     howTo:[
+       "Trouve 15 minutes tranquilles, avec un stylo et du papier — pas un écran.",
+       "Phrase 1 : « Une bonne journée pour moi, c'est… ». Concentre-toi sur la sensation, pas sur ce que tu accomplis.",
+       "Phrase 2 : « Une bonne année implique… ». Pense expériences, relations, croissance — pas titres ni achats.",
+       "Phrase 3 : « Une bonne vie signifie… ». Une seule ligne. Ne sur-réfléchis pas — ton instinct sait.",
+       "Garde le papier visible : portefeuille, table de nuit, bureau, fond d'écran.",
+       "Relis-le au moment de prendre une décision difficile — et demande-toi honnêtement si ce choix te rapproche ou t'éloigne de cette vie."
+     ],
+     benefit:"Les exercices de clarification des valeurs améliorent la prise de décision, réduisent le regret, protègent contre le stress et sont liés à des profils d'activation du cortex préfrontal médian — le réseau auto-référentiel du cerveau — associés à un bien-être durable (Lyubomirsky, The How of Happiness, 2008 ; et la littérature sur l'affirmation de Cohen & Sherman). Quand ton « pourquoi » est explicite et écrit noir sur blanc, les petites décisions quotidiennes commencent à se composer dans la même direction, et tu cesses de gaspiller de l'énergie sur des options qui ne te correspondent pas. 10 minutes, une seule fois, pour des effets qui peuvent durer des années — l'un des exercices à plus fort levier du programme.",
+     source:"Lyubomirsky, The How of Happiness 2008",sourceUrl:"https://sonjalyubomirsky.com/books/the-how-of-happiness/"},
+  ]},
+  {week:8,title:"Intégration & élan",theme:"Ton stack permanent",color:"#4A4A8A",light:"#EEEEF8",
+   tagline:"Les habitudes n'ont pas besoin de discipline — elles ont besoin d'identité. Tu es maintenant quelqu'un qui fait ça.",
+   science:"La formation d'habitudes basée sur l'identité (Fogg, Stanford / Clear, Atomic Habits) montre que cadrer les habitudes comme « qui je suis » plutôt que « ce que je fais » produit une adhérence long terme nettement supérieure.",
+   habits:[
+    {id:"w8h1",emoji:"🔁",title:"Passe en revue tes 8 semaines",micro:"Quelles 5 habitudes ont eu le plus d'impact ? Garde-les comme non négociables.",time:"20 min une fois",
+     howTo:[
+       "Bloque 20 minutes seul·e avec tes notes et le programme. Zéro distraction.",
+       "Reviens semaine par semaine et note chaque habitude de 1 à 5 sur la clarté de son impact.",
+       "Identifie ton top 5 par impact — elles deviennent tes non négociables permanents.",
+       "Pour les habitudes à impact moyen : décide de continuer, de modifier la dose ou de laisser tomber.",
+       "Pour les habitudes à faible impact : laisse tomber sans culpabilité. Toutes les habitudes ne marchent pas pour tout le monde.",
+       "Écris tes 5 non négociables finaux sur une seule carte et mets-la quelque part que tu vois chaque jour."
+     ],
+     benefit:"Les travaux de BJ Fogg sur Tiny Habits (Stanford Behaviour Design Lab, 2019) et la synthèse de James Clear dans Atomic Habits montrent tous les deux que la phase de consolidation — la réflexion explicite sur ce qui a marché — est aussi critique que la phase d'acquisition pour l'adhérence long terme. Les habitudes qui sont revues et nommées deviennent partie de l'identité ; celles qui ne le sont pas s'effacent en quelques semaines. Réduire ton stack aux 5 habitudes qui ont produit l'effet subjectif le plus clair multiplie par 2 à 3 les chances de maintien à long terme dans les études de suivi, et élimine la charge cognitive de tout vouloir maintenir.",
+     source:"Fogg, Tiny Habits — Stanford Behaviour Design Lab 2019",sourceUrl:"https://tinyhabits.com"},
+    {id:"w8h2",emoji:"📅",title:"Planifie ton ancrage social du mois prochain",micro:"Un vrai rassemblement avec des gens qui comptent. Dans l'agenda maintenant.",time:"5 min une fois",
+     howTo:[
+       "Ouvre ton agenda maintenant. Choisis une date concrète dans les 4 prochaines semaines.",
+       "Invite au moins une personne dont tu apprécies vraiment la compagnie — idéalement 2 à 4 personnes.",
+       "Sois spécifique : un repas, une balade, un film, un café — jamais « on devrait se voir bientôt ».",
+       "Envoie l'invitation dans les 5 minutes qui suivent. N'attends pas le « bon moment ».",
+       "Ajoute un rappel récurrent mensuel dans ton agenda, intitulé « ancrage social ».",
+       "Une fois le rythme pris, ajoute un deuxième ancrage mensuel avec un autre cercle (famille, vieux amis, collègues)."
+     ],
+     benefit:"L'étude Harvard sur le développement adulte (Waldinger & Schulz, The Good Life, 2023) montre de manière constante que les personnes qui investissent activement dans leurs relations — plutôt que d'attendre qu'elles se produisent — rapportent la satisfaction de vie la plus élevée à tout âge, indépendamment de l'introversion ou l'extraversion. Planifier les relations comme on planifie les réunions les protège de la tyrannie des tâches urgentes. Un ancrage mensuel récurrent transforme les amitiés de quelque chose qui « devrait arriver plus souvent » en quelque chose qui arrive vraiment — la seule version qui compte pour le bien-être.",
+     source:"Waldinger & Schulz, The Good Life 2023",sourceUrl:"https://www.goodlifeproject.com"},
+    {id:"w8h3",emoji:"🧾",title:"Écris ton OS du bien-être — une page",micro:"Tes non négociables, tes valeurs, tes trois ancrages",time:"30 min une fois",
+     howTo:[
+       "Une seule page. Imprimée ou écrite à la main — physique, pas numérique.",
+       "Section 1 : mes 5 habitudes quotidiennes non négociables (extraites de ta revue semaine 8).",
+       "Section 2 : mes valeurs en 3 mots (extraites de tes phrases « bonne vie » de la semaine 7).",
+       "Section 3 : ce que je fais quand je vais mal — 3 ancrages concrets : respirer, marcher, appeler une personne précise.",
+       "Ajoute une ligne en bas : la date de ta prochaine relecture (dans 3 mois).",
+       "Mets-la quelque part de visible : frigo, bureau, couverture de carnet. Relis-la chaque semaine pendant le premier mois."
+     ],
+     benefit:"Baumeister & Tierney (Willpower, 2011) et les recherches ultérieures sur les intentions d'implémentation (Gollwitzer) montrent qu'externaliser des règles personnelles — les mettre sur papier, à l'avance — double l'adhérence par rapport au simple fait de les garder en mémoire. Quand une décision est déjà prise, les moments stressants ne doivent pas être renégociés, et la volonté est préservée pour ce qui en a vraiment besoin. Une page « OS du bien-être » agit comme une constitution personnelle — c'est ce sur quoi tu te reposes quand tu es fatigué·e, stressé·e ou tenté·e d'abandonner les habitudes qui ont fait que ce programme a marché.",
+     source:"Baumeister & Tierney, Willpower 2011",sourceUrl:"https://www.amazon.com/Willpower-Rediscovering-Greatest-Human-Strength/dp/0143122231"},
+    {id:"w8h4",emoji:"🎯",title:"Célèbre — sincèrement, précisément",micro:"Note ce qui a changé. Dis-le à quelqu'un. Marque le moment.",time:"10 min",
+     howTo:[
+       "Écris 3 choses spécifiques qui sont différentes chez toi après 8 semaines — énergie, humeur, sommeil, relations, concentration, dialogue intérieur.",
+       "Dis à une personne qui compte ce que tu as accompli et pourquoi c'était dur. À voix haute, en personne si possible.",
+       "Offre-toi une vraie récompense : un repas favori, un voyage, un achat qui a du sens, une expérience que tu reportais.",
+       "Prends une photo de ton OS du bien-être à côté d'un café — tu en voudras le souvenir plus tard.",
+       "Programme un check-in à 3 mois dans ton agenda, maintenant, pour relire ta page et refaire cette réflexion.",
+       "Dis-le explicitement : « Je l'ai fait. Je suis quelqu'un qui va au bout. » L'identité se construit avec des phrases comme celle-là."
+     ],
+     benefit:"BJ Fogg (Tiny Habits, Stanford 2019) identifie la célébration délibérée comme l'outil le plus sous-utilisé et le plus efficace de la formation d'habitudes — parce que l'émotion positive immédiate encode chimiquement la boucle d'habitude d'une façon que les récompenses différées ne peuvent pas égaler. Revoir les gains spécifiques, le dire à d'autres, marquer le moment : cela convertit 8 semaines d'effort en un basculement identitaire durable — « je suis quelqu'un qui investit dans son bien-être ». Cette identité est ce qui fait tourner les habitudes pendant des mois et des années après la fin du programme formel — ce qui est, au final, le seul résultat qui compte.",
      source:"Fogg, Tiny Habits — Stanford 2019",sourceUrl:"https://tinyhabits.com"},
   ]},
 ];
@@ -553,14 +1172,15 @@ function Landing({setTab, t}) {
   );
 }
 
-function Program({checked, setChecked, streak, isPro, setTab, t}) {
+function Program({checked, setChecked, streak, isPro, setTab, t, lang}) {
+  const program = lang === "fr" ? PROGRAM_FR : PROGRAM;
   const [expanded, setExpanded] = useState({1:true});
   const [activeItem, setActiveItem] = useState(null);
   const [activeWeek, setActiveWeek] = useState(null);
   const FREE = isPro ? [1,2,3,4,5,6,7,8] : [1,2];
   const ember = "#C8440A"; const gold = "#C9960A"; const mist = "#E8E2D8";
   const stone = "#8A8070"; const ink = "#1C1814"; const cream = "#F8F4EE";
-  const total = PROGRAM.flatMap(w=>w.habits).length;
+  const total = program.flatMap(w=>w.habits).length;
   const done = Object.values(checked).filter(Boolean).length;
   const pct = Math.round((done/total)*100);
   const toggle = (id,e) => { e.stopPropagation(); setChecked(p=>({...p,[id]:!p[id]})); };
@@ -568,7 +1188,7 @@ function Program({checked, setChecked, streak, isPro, setTab, t}) {
 
   // Auto-close a week bloc when all its habits are checked
   useEffect(() => {
-    PROGRAM.forEach(week => {
+    program.forEach(week => {
       const allChecked = week.habits.every(h => checked[h.id]);
       if (allChecked && expanded[week.week]) {
         const timer = setTimeout(() => {
@@ -599,7 +1219,7 @@ function Program({checked, setChecked, streak, isPro, setTab, t}) {
         </div>
       </div>
       <div style={{maxWidth:620,margin:"0 auto",padding:"12px 10px 48px"}}>
-        {PROGRAM.map(week=>{
+        {program.map(week=>{
           const wd=wp(week); const wt=week.habits.length;
           const isOpen=expanded[week.week]; const allDone=wd===wt;
           const locked=!FREE.includes(week.week);
@@ -1089,7 +1709,7 @@ export default function App() {
         </div>
       </div>
       {tab==="home"&&<Landing setTab={setTab} t={t}/>}
-      {tab==="program"&&<Program checked={checked} setChecked={setChecked} streak={streak} isPro={isPro} setTab={setTab} t={t}/>}
+      {tab==="program"&&<Program checked={checked} setChecked={setChecked} streak={streak} isPro={isPro} setTab={setTab} t={t} lang={lang}/>}
       {tab==="pricing"&&<Pricing t={t} isPro={isPro} setIsPro={setIsPro} setTab={setTab}/>}
       {tab==="blog"&&<Blog t={t}/>}
       {tab==="faq"&&<FAQ t={t} setTab={setTab}/>}
