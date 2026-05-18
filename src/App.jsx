@@ -639,7 +639,7 @@ function Program({checked, setChecked, streak, isPro, setTab, t}) {
         </div>
       </div>
       <div style={{maxWidth:containerMax,margin:"0 auto",padding:isDesktop?"24px 24px 80px":"12px 10px 48px"}}>
-        <div style={{display:isDesktop?"grid":"block",gridTemplateColumns:isDesktop?"1fr 1fr":"none",gap:isDesktop?14:0,alignItems:"start"}}>
+        <div style={{display:"block"}}>
         {PROGRAM.map(week=>{
           const wd=wp(week); const wt=week.habits.length;
           const isOpen=expanded[week.week]; const allDone=wd===wt;
@@ -647,55 +647,55 @@ function Program({checked, setChecked, streak, isPro, setTab, t}) {
           const greenLight = "#EDF7EF";
           const greenMid = "#3D8A4A";
           return (
-            <div key={week.week} style={{marginBottom:8,borderRadius:14,overflow:"hidden",border:"1px solid "+(allDone?"#3D8A4A50":mist),background:"white",transition:"all 0.4s ease"}}>
-              <button onClick={()=>setExpanded(p=>({...p,[week.week]:!p[week.week]}))} style={{width:"100%",display:"flex",alignItems:"flex-start",padding:"14px 14px",background:allDone?greenLight:"white",border:"none",cursor:"pointer",textAlign:"left",gap:11,transition:"background 0.4s"}}>
-                <div style={{width:4,minHeight:50,borderRadius:2,background:allDone?greenMid:week.color,flexShrink:0,marginTop:2,transition:"background 0.4s"}}/>
+            <div key={week.week} style={{marginBottom:isDesktop?12:8,borderRadius:14,overflow:"hidden",border:"1px solid "+(allDone?"#3D8A4A50":mist),background:"white",transition:"all 0.4s ease"}}>
+              <button onClick={()=>setExpanded(p=>({...p,[week.week]:!p[week.week]}))} style={{width:"100%",display:"flex",alignItems:"flex-start",padding:isDesktop?"20px 22px":"14px 14px",background:allDone?greenLight:"white",border:"none",cursor:"pointer",textAlign:"left",gap:isDesktop?16:11,transition:"background 0.4s"}}>
+                <div style={{width:isDesktop?5:4,minHeight:isDesktop?60:50,borderRadius:2,background:allDone?greenMid:week.color,flexShrink:0,marginTop:2,transition:"background 0.4s"}}/>
                 <div style={{flex:1}}>
-                  <div style={{display:"flex",alignItems:"center",gap:7,marginBottom:3,flexWrap:"wrap"}}>
-                    <span style={{fontSize:10,fontFamily:"monospace",color:allDone?greenMid:week.color,textTransform:"uppercase",letterSpacing:"0.12em",fontWeight:"bold"}}>{t.weekLabel} {week.week}</span>
-                    <span style={{fontSize:10,fontFamily:"monospace",color:"#AAA"}}>- {wd}/{wt}</span>
-                    {locked&&<span style={{fontSize:9,fontFamily:"monospace",background:"#EDE7DC",color:stone,padding:"1px 6px",borderRadius:4}}>{"🔒"} {t.proTag}</span>}
-                    {allDone&&<span style={{fontSize:9,fontFamily:"monospace",background:"#D1F0D8",color:greenMid,padding:"2px 8px",borderRadius:4,fontWeight:"bold"}}>{"✓"} {t.completedLabel}</span>}
+                  <div style={{display:"flex",alignItems:"center",gap:7,marginBottom:isDesktop?5:3,flexWrap:"wrap"}}>
+                    <span style={{fontSize:isDesktop?13:10,fontFamily:"monospace",color:allDone?greenMid:week.color,textTransform:"uppercase",letterSpacing:"0.12em",fontWeight:"bold"}}>{t.weekLabel} {week.week}</span>
+                    <span style={{fontSize:isDesktop?13:10,fontFamily:"monospace",color:"#AAA"}}>— {wd}/{wt}</span>
+                    {locked&&<span style={{fontSize:isDesktop?11:9,fontFamily:"monospace",background:"#EDE7DC",color:stone,padding:"2px 8px",borderRadius:4}}>{"🔒"} {t.proTag}</span>}
+                    {allDone&&<span style={{fontSize:isDesktop?11:9,fontFamily:"monospace",background:"#D1F0D8",color:greenMid,padding:"2px 8px",borderRadius:4,fontWeight:"bold"}}>{"✓"} {t.completedLabel}</span>}
                   </div>
-                  <div style={{fontSize:14,color:ink,fontWeight:"bold",letterSpacing:"-0.2px",marginBottom:3}}>{week.title}</div>
-                  <div style={{fontSize:11,color:"#666",fontStyle:"italic",lineHeight:1.5,paddingRight:8}}>{week.tagline}</div>
-                  <div style={{fontSize:9,color:allDone?greenMid:week.color,fontFamily:"monospace",marginTop:5,background:allDone?"#D1F0D8":week.light,display:"inline-block",padding:"2px 7px",borderRadius:4}}>{week.theme}</div>
+                  <div style={{fontSize:isDesktop?20:14,color:ink,fontWeight:"bold",letterSpacing:"-0.3px",marginBottom:isDesktop?5:3}}>{week.title}</div>
+                  <div style={{fontSize:isDesktop?14:11,color:"#666",fontStyle:"italic",lineHeight:1.55,paddingRight:8}}>{week.tagline}</div>
+                  <div style={{fontSize:isDesktop?11:9,color:allDone?greenMid:week.color,fontFamily:"monospace",marginTop:isDesktop?7:5,background:allDone?"#D1F0D8":week.light,display:"inline-block",padding:"3px 9px",borderRadius:4}}>{week.theme}</div>
                 </div>
                 <div style={{display:"flex",flexDirection:"column",alignItems:"center",gap:5,flexShrink:0,paddingTop:2}}>
-                  <div style={{width:28,height:28,borderRadius:"50%",background:allDone?greenMid:"#F0EDE8",display:"flex",alignItems:"center",justifyContent:"center",fontSize:allDone?14:10,color:allDone?"white":week.color,fontFamily:"monospace",fontWeight:"bold",transition:"all 0.4s"}}>
+                  <div style={{width:isDesktop?36:28,height:isDesktop?36:28,borderRadius:"50%",background:allDone?greenMid:"#F0EDE8",display:"flex",alignItems:"center",justifyContent:"center",fontSize:allDone?(isDesktop?16:14):(isDesktop?12:10),color:allDone?"white":week.color,fontFamily:"monospace",fontWeight:"bold",transition:"all 0.4s"}}>
                     {allDone?"✓":Math.round((wd/wt)*100)+"%"}
                   </div>
-                  <span style={{color:"#CCC",fontSize:15,transform:isOpen?"rotate(90deg)":"rotate(0deg)",display:"inline-block",transition:"transform 0.2s"}}>{">"}</span>
+                  <span style={{color:"#CCC",fontSize:isDesktop?18:15,transform:isOpen?"rotate(90deg)":"rotate(0deg)",display:"inline-block",transition:"transform 0.2s"}}>{">"}</span>
                 </div>
               </button>
               {isOpen&&(
                 <div style={{borderTop:"1px solid "+week.color+"20"}}>
-                  <div style={{background:week.light,borderBottom:"1px solid "+week.color+"15",padding:"9px 14px 9px 18px",display:"flex",gap:8}}>
-                    <span style={{fontSize:12,flexShrink:0}}>{"[sci]"}</span>
-                    <p style={{margin:0,fontSize:11,color:"#555",fontStyle:"italic",lineHeight:1.5}}>{week.science}</p>
+                  <div style={{background:week.light,borderBottom:"1px solid "+week.color+"15",padding:isDesktop?"12px 22px 12px 26px":"9px 14px 9px 18px",display:"flex",gap:10}}>
+                    <span style={{fontSize:isDesktop?14:12,flexShrink:0}}>{"[sci]"}</span>
+                    <p style={{margin:0,fontSize:isDesktop?13:11,color:"#555",fontStyle:"italic",lineHeight:1.6}}>{week.science}</p>
                   </div>
                   {locked?(
-                    <div style={{padding:"28px 20px",textAlign:"center"}}>
-                      <div style={{fontSize:24,marginBottom:8}}>{"🔒"}</div>
-                      <div style={{fontSize:14,fontFamily:"Georgia,serif",color:ink,marginBottom:4}}>{t.proTitle} {week.week}</div>
-                      <div style={{fontSize:11,color:stone,marginBottom:14}}>{t.proSub}</div>
-                      <button onClick={()=>setTab("pricing")} style={{background:ember,color:"white",border:"none",borderRadius:8,padding:"10px 22px",fontSize:13,cursor:"pointer"}}>{t.proBtn}</button>
+                    <div style={{padding:isDesktop?"36px 24px":"28px 20px",textAlign:"center"}}>
+                      <div style={{fontSize:isDesktop?28:24,marginBottom:8}}>{"🔒"}</div>
+                      <div style={{fontSize:isDesktop?17:14,fontFamily:"Georgia,serif",color:ink,marginBottom:4}}>{t.proTitle} {week.week}</div>
+                      <div style={{fontSize:isDesktop?13:11,color:stone,marginBottom:14}}>{t.proSub}</div>
+                      <button onClick={()=>setTab("pricing")} style={{background:ember,color:"white",border:"none",borderRadius:8,padding:isDesktop?"12px 28px":"10px 22px",fontSize:isDesktop?14:13,cursor:"pointer"}}>{t.proBtn}</button>
                     </div>
                   ):week.habits.map((habit,i)=>{
                     const isDone=checked[habit.id];
                     return (
-                      <div key={habit.id} style={{display:"flex",alignItems:"flex-start",gap:10,padding:"12px 14px",background:isDone?week.light:"white",borderBottom:i<week.habits.length-1?"1px solid #F5F2EE":"none",transition:"background 0.2s"}}>
-                        <div onClick={e=>toggle(habit.id,e)} style={{width:20,height:20,borderRadius:5,border:isDone?"2px solid "+week.color:"2px solid #D0CCC4",background:isDone?week.color:"white",display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0,marginTop:2,cursor:"pointer",transition:"all 0.15s"}}>
-                          {isDone&&<span style={{color:"white",fontSize:11}}>{"✓"}</span>}
+                      <div key={habit.id} style={{display:"flex",alignItems:"flex-start",gap:isDesktop?14:10,padding:isDesktop?"16px 22px":"12px 14px",background:isDone?week.light:"white",borderBottom:i<week.habits.length-1?"1px solid #F5F2EE":"none",transition:"background 0.2s"}}>
+                        <div onClick={e=>toggle(habit.id,e)} style={{width:isDesktop?24:20,height:isDesktop?24:20,borderRadius:6,border:isDone?"2px solid "+week.color:"2px solid #D0CCC4",background:isDone?week.color:"white",display:"flex",alignItems:"center",justifyContent:"center",flexShrink:0,marginTop:3,cursor:"pointer",transition:"all 0.15s"}}>
+                          {isDone&&<span style={{color:"white",fontSize:isDesktop?13:11}}>{"✓"}</span>}
                         </div>
-                        <span style={{fontSize:15,flexShrink:0,marginTop:1}}>{habit.emoji}</span>
+                        <span style={{fontSize:isDesktop?20:15,flexShrink:0,marginTop:2}}>{habit.emoji}</span>
                         <div style={{flex:1,minWidth:0}}>
-                          <div style={{fontSize:12.5,fontWeight:"bold",color:isDone?"#AAA":ink,textDecoration:isDone?"line-through":"none",marginBottom:2,lineHeight:1.3}}>{habit.title}</div>
-                          <div style={{fontSize:11,color:"#BBB",fontStyle:"italic",lineHeight:1.4}}>{habit.micro}</div>
+                          <div style={{fontSize:isDesktop?16:12.5,fontWeight:"bold",color:isDone?"#AAA":ink,textDecoration:isDone?"line-through":"none",marginBottom:isDesktop?4:2,lineHeight:1.3}}>{habit.title}</div>
+                          <div style={{fontSize:isDesktop?13:11,color:"#999",fontStyle:"italic",lineHeight:1.45}}>{habit.micro}</div>
                         </div>
-                        <div style={{display:"flex",flexDirection:"column",alignItems:"flex-end",gap:4,flexShrink:0}}>
-                          <div style={{background:isDone?week.color+"20":"#F0EDE8",color:isDone?week.color:"#999",fontSize:9,fontFamily:"monospace",padding:"2px 6px",borderRadius:4,whiteSpace:"nowrap"}}>{habit.time}</div>
-                          <button onClick={e=>{e.stopPropagation();setActiveItem(habit);setActiveWeek(week);}} style={{background:"none",border:"1px solid "+week.color+"40",borderRadius:5,cursor:"pointer",fontSize:9,color:week.color,fontFamily:"monospace",padding:"2px 6px",whiteSpace:"nowrap"}}>{"i"} {t.moreInfo}</button>
+                        <div style={{display:"flex",flexDirection:"column",alignItems:"flex-end",gap:isDesktop?6:4,flexShrink:0}}>
+                          <div style={{background:isDone?week.color+"20":"#F0EDE8",color:isDone?week.color:"#999",fontSize:isDesktop?11:9,fontFamily:"monospace",padding:isDesktop?"3px 9px":"2px 6px",borderRadius:4,whiteSpace:"nowrap"}}>{habit.time}</div>
+                          <button onClick={e=>{e.stopPropagation();setActiveItem(habit);setActiveWeek(week);}} style={{background:"none",border:"1px solid "+week.color+"40",borderRadius:5,cursor:"pointer",fontSize:isDesktop?11:9,color:week.color,fontFamily:"monospace",padding:isDesktop?"3px 9px":"2px 6px",whiteSpace:"nowrap"}}>{"i"} {t.moreInfo}</button>
                         </div>
                       </div>
                     );
